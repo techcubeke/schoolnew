@@ -1,0 +1,88 @@
+2014/08/22 11:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "student".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/student
+HTTP_REFERER=http://localhost:8080/@school/site/page?view=academic
+---
+2014/08/22 11:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/user
+HTTP_REFERER=http://localhost:8080/@school/site/page?view=academic
+---
+2014/08/22 11:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "examrecord".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('examrecord')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/examrecord
+HTTP_REFERER=http://localhost:8080/@school/user
+---
+2014/08/22 11:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "staff".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/staff
+HTTP_REFERER=http://localhost:8080/@school/examrecord
+---
+2014/08/22 11:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "parents".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('parents')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/parents
+HTTP_REFERER=http://localhost:8080/@school/site/page?view=academic
+---
+2014/08/25 11:09:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'schoolnew.dormroom' doesn't exist. The SQL statement executed was: SELECT * FROM dormroom.
+in C:\wamp\www\@school\themes\abound\views\site\index.php (140)
+in C:\wamp\www\@school\protected\controllers\SiteController.php (32)
+in C:\wamp\www\@school\index.php (13)
+2014/08/25 11:09:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'schoolnew.dormroom' doesn't exist. The SQL statement executed was: SELECT * FROM dormroom' in C:\wamp\Yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\Yii\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\@school\themes\abound\views\site\index.php(140): CDbCommand->queryAll()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#3 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', NULL, true)
+#4 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', NULL, true)
+#5 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\@school\protected\controllers\SiteController.php(32): CController->render('index')
+#7 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\wamp\www\@school\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/@school/
+HTTP_REFERER=http://localhost:8080/@school/gii/crud
+---
+2014/08/25 11:14:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "@school/visitorpass".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('@school/visitor...')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/@school/visitorpass
+HTTP_REFERER=http://localhost:8080/@school/
+---
+2014/08/25 11:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dormroom".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/dormroom
+HTTP_REFERER=http://localhost:8080/@school/site/page?view=admin
+---
