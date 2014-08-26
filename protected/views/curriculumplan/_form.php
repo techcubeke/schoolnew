@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'curriculumID'); ?>
-		<?php echo $form->textField($model,'curriculumID'); ?>
+		<?php echo $form->textField($model,'curriculumID',array('size'=>60,'maxlength'=>108)); ?>
 		<?php echo $form->error($model,'curriculumID'); ?>
 	</div>
 
@@ -53,7 +53,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'iscompleted'); ?>
-		<?php echo $form->textField($model,'iscompleted'); ?>
+		<?php echo $form->textField($model,'iscompleted',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'iscompleted'); ?>
 	</div>
 

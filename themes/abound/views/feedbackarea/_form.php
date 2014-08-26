@@ -3,6 +3,8 @@
 /* @var $model Feedbackarea */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -11,7 +13,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">please take time to  <span class="required">leave</span> us your feedback.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -28,7 +30,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

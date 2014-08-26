@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Financialyear #<?php echo $model->financialyearID; ?></h1>
+<h1>View Financial year #<?php echo $model->financialyearID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

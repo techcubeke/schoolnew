@@ -3,6 +3,8 @@
 /* @var $model Fuelconsumption */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -12,32 +14,18 @@
 )); ?>
 
 	<div class="row">
+    <div class="span3 ">
 		<?php echo $form->label($model,'fuelID'); ?>
 		<?php echo $form->textField($model,'fuelID'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'vehicleID'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->label($model,'vehicle reg no'); ?>
 		<?php echo $form->textField($model,'vehicleID',array('size'=>44,'maxlength'=>44)); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'fuelconsumed'); ?>
-		<?php echo $form->textField($model,'fuelconsumed',array('size'=>60,'maxlength'=>120)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'amount'); ?>
-		<?php echo $form->textField($model,'amount',array('size'=>60,'maxlength'=>120)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'consumeddate'); ?>
-		<?php echo $form->textField($model,'consumeddate'); ?>
-	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

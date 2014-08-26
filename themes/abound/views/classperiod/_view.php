@@ -2,9 +2,10 @@
 /* @var $this ClassperiodController */
 /* @var $data Classperiod */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="view">
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('periodID')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->periodID), array('view', 'id'=>$data->periodID)); ?>
 	<br />

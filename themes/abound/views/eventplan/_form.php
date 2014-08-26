@@ -3,6 +3,8 @@
 /* @var $model Eventplan */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,55 +18,58 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'eventname'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'event name'); ?>
 		<?php echo $form->textField($model,'eventname',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'eventname'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>4, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'eventtype'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'event type'); ?>
 		<?php echo $form->textField($model,'eventtype',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'eventtype'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'eventfrom'); ?>
+		<div class="span3 ">
+		<?php echo $form->labelEx($model,'event from'); ?>
 		<?php echo $form->textField($model,'eventfrom'); ?>
 		<?php echo $form->error($model,'eventfrom'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'eventto'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'event to'); ?>
 		<?php echo $form->textField($model,'eventto'); ?>
 		<?php echo $form->error($model,'eventto'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'isworkingday'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'is working day'); ?>
 		<?php echo $form->textField($model,'isworkingday',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'isworkingday'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'dateadded'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'date added'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'datemodified'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'date modified'); ?>
 		<?php echo $form->textField($model,'datemodified'); ?>
 		<?php echo $form->error($model,'datemodified'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-primary" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

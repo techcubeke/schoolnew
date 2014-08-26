@@ -44,18 +44,26 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'feereceipt-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
 		'feereceiptID',
 		'adminno',
 		'classroom',
 		'invoicedate',
 		'termtitle',
-		'previousinvoiceamount',
+		'totalamount',
 		/*
+		'previousinvoiceamount',
 		'previousamount',
 		'duedate',
 		'adjustedamount',
-		'totalamount',
 		'dateadded',
 		*/
 		array(

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Feedbackarea', 'url'=>array('index')),
-	array('label'=>'Manage Feedbackarea', 'url'=>array('admin')),
+	array('label'=>'List Feedback', 'url'=>array('index')),
+	array('label'=>'Manage Feedback', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Feedbackarea</h1>
+<h1>Give us your feedback</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

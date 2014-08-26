@@ -115,4 +115,5 @@ class Bookstock extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
 }

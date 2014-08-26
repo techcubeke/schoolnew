@@ -18,7 +18,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'curriculumID'); ?>
-		<?php echo $form->textField($model,'curriculumID'); ?>
+		<?php echo $form->textField($model,'curriculumID',array('size'=>60,'maxlength'=>108)); ?>
 	</div>
 
 	<div class="row">
@@ -48,7 +48,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'iscompleted'); ?>
-		<?php echo $form->textField($model,'iscompleted'); ?>
+		<?php echo $form->textField($model,'iscompleted',array('size'=>3,'maxlength'=>3)); ?>
 	</div>
 
 	<div class="row">

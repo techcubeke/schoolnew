@@ -86,3 +86,132 @@ Stack trace:
 REQUEST_URI=/@school/dormroom
 HTTP_REFERER=http://localhost:8080/@school/site/page?view=admin
 ---
+2014/08/26 10:25:00 [error] [php] Undefined variable: addr (C:\wamp\www\@school\themes\abound\views\bookstock\_form.php:70)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(869): BookstockController->renderFile()
+#1 C:\wamp\www\@school\themes\abound\views\bookstock\create.php(18): BookstockController->renderPartial()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(95): BookstockController->renderInternal()
+#4 C:\wamp\Yii\framework\web\CController.php(869): BookstockController->renderFile()
+#5 C:\wamp\Yii\framework\web\CController.php(782): BookstockController->renderPartial()
+#6 C:\wamp\www\@school\protected\controllers\BookstockController.php(79): BookstockController->render()
+#7 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): BookstockController->actionCreate()
+#8 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): BookstockController->runAction()
+#10 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): BookstockController->filterAccessControl()
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(265): BookstockController->runActionWithFilters()
+#16 C:\wamp\Yii\framework\web\CWebApplication.php(282): BookstockController->run()
+#17 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\wamp\www\@school\index.php(13): CWebApplication->run()
+REQUEST_URI=/@school/bookstock/create
+in C:\wamp\www\@school\themes\abound\views\bookstock\_form.php (70)
+in C:\wamp\www\@school\themes\abound\views\bookstock\create.php (18)
+in C:\wamp\www\@school\protected\controllers\BookstockController.php (79)
+2014/08/26 10:25:26 [error] [php] include(AccAccount.php): failed to open stream: No such file or directory (C:\wamp\Yii\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\wamp\www\@school\themes\abound\views\bookstock\_form.php(70): spl_autoload_call()
+#1 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(95): BookstockController->renderInternal()
+#3 C:\wamp\Yii\framework\web\CController.php(869): BookstockController->renderFile()
+#4 C:\wamp\www\@school\themes\abound\views\bookstock\create.php(18): BookstockController->renderPartial()
+#5 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#6 C:\wamp\Yii\framework\web\CBaseController.php(95): BookstockController->renderInternal()
+#7 C:\wamp\Yii\framework\web\CController.php(869): BookstockController->renderFile()
+#8 C:\wamp\Yii\framework\web\CController.php(782): BookstockController->renderPartial()
+#9 C:\wamp\www\@school\protected\controllers\BookstockController.php(79): BookstockController->render()
+#10 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): BookstockController->actionCreate()
+#11 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): BookstockController->runAction()
+#13 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): BookstockController->filterAccessControl()
+#16 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\wamp\Yii\framework\web\CController.php(265): BookstockController->runActionWithFilters()
+#19 C:\wamp\Yii\framework\web\CWebApplication.php(282): BookstockController->run()
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 C:\wamp\www\@school\index.php(13): CWebApplication->run()
+REQUEST_URI=/@school/bookstock/create
+in C:\wamp\www\@school\themes\abound\views\bookstock\_form.php (70)
+in C:\wamp\www\@school\themes\abound\views\bookstock\create.php (18)
+in C:\wamp\www\@school\protected\controllers\BookstockController.php (79)
+2014/08/26 10:45:53 [error] [php] Undefined variable: select (C:\wamp\www\@school\themes\abound\views\bookstock\_form.php:71)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(869): BookstockController->renderFile()
+#1 C:\wamp\www\@school\themes\abound\views\bookstock\create.php(18): BookstockController->renderPartial()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(95): BookstockController->renderInternal()
+#4 C:\wamp\Yii\framework\web\CController.php(869): BookstockController->renderFile()
+#5 C:\wamp\Yii\framework\web\CController.php(782): BookstockController->renderPartial()
+#6 C:\wamp\www\@school\protected\controllers\BookstockController.php(79): BookstockController->render()
+#7 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): BookstockController->actionCreate()
+#8 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): BookstockController->runAction()
+#10 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): BookstockController->filterAccessControl()
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(265): BookstockController->runActionWithFilters()
+#16 C:\wamp\Yii\framework\web\CWebApplication.php(282): BookstockController->run()
+#17 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\wamp\www\@school\index.php(13): CWebApplication->run()
+REQUEST_URI=/@school/bookstock/create
+in C:\wamp\www\@school\themes\abound\views\bookstock\_form.php (71)
+in C:\wamp\www\@school\themes\abound\views\bookstock\create.php (18)
+in C:\wamp\www\@school\protected\controllers\BookstockController.php (79)
+2014/08/26 10:46:32 [error] [exception.CException] exception 'CException' with message 'Property "Bookstock.getStock" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('getStock')
+#1 C:\wamp\www\@school\themes\abound\views\bookstock\_form.php(72): CActiveRecord->__get('getStock')
+#2 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#3 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#4 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#5 C:\wamp\www\@school\themes\abound\views\bookstock\create.php(18): CController->renderPartial('_form', Array)
+#6 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#7 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#8 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#9 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\wamp\www\@school\protected\controllers\BookstockController.php(79): CController->render('create', Array)
+#11 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): BookstockController->actionCreate()
+#12 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookstock/creat...')
+#22 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\wamp\www\@school\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/@school/bookstock/create
+HTTP_REFERER=http://localhost:8080/@school/bookstock
+---
+2014/08/26 12:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "feedbackarea".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('feedbackarea')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('feedbackarea')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('examterm/feedba...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\@school\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/@school/examterm/feedbackarea
+---
+2014/08/26 13:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bank".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bank')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/bank
+---

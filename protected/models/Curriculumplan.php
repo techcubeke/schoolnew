@@ -5,13 +5,13 @@
  *
  * The followings are the available columns in table 'curriculumplan':
  * @property integer $curriculumplanID
- * @property integer $curriculumID
+ * @property string $curriculumID
  * @property string $bookID
  * @property string $planmonth
  * @property string $topic
  * @property string $subtopic
  * @property string $activity
- * @property integer $iscompleted
+ * @property string $iscompleted
  * @property string $dateadded
  * @property string $datemodified
  */
@@ -44,9 +44,10 @@ class Curriculumplan extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('curriculumID, iscompleted', 'required'),
-			array('curriculumID, iscompleted', 'numerical', 'integerOnly'=>true),
+			array('curriculumID', 'length', 'max'=>108),
 			array('bookID', 'length', 'max'=>44),
 			array('planmonth, topic, subtopic, activity', 'length', 'max'=>50),
+			array('iscompleted', 'length', 'max'=>3),
 			array('dateadded, datemodified', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -96,13 +97,13 @@ class Curriculumplan extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('curriculumplanID',$this->curriculumplanID);
-		$criteria->compare('curriculumID',$this->curriculumID);
+		$criteria->compare('curriculumID',$this->curriculumID,true);
 		$criteria->compare('bookID',$this->bookID,true);
 		$criteria->compare('planmonth',$this->planmonth,true);
 		$criteria->compare('topic',$this->topic,true);
 		$criteria->compare('subtopic',$this->subtopic,true);
 		$criteria->compare('activity',$this->activity,true);
-		$criteria->compare('iscompleted',$this->iscompleted);
+		$criteria->compare('iscompleted',$this->iscompleted,true);
 		$criteria->compare('dateadded',$this->dateadded,true);
 		$criteria->compare('datemodified',$this->datemodified,true);
 

@@ -3,6 +3,8 @@
 /* @var $model Financialyear */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,33 +13,13 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'financialyearID'); ?>
-		<?php echo $form->textField($model,'financialyearID'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'datefrom'); ?>
-		<?php echo $form->textField($model,'datefrom'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateto'); ?>
-		<?php echo $form->textField($model,'dateto'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'isactive'); ?>
 		<?php echo $form->textField($model,'isactive',array('size'=>3,'maxlength'=>3)); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

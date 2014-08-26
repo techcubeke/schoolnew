@@ -3,6 +3,8 @@
 /* @var $model Feepayment */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -12,67 +14,24 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'feepaymentID'); ?>
-		<?php echo $form->textField($model,'feepaymentID'); ?>
-	</div>
-
-	<div class="row">
+    <div class="span3">
 		<?php echo $form->label($model,'feereceiptID'); ?>
 		<?php echo $form->textField($model,'feereceiptID'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->label($model,'financialyear'); ?>
 		<?php echo $form->textField($model,'financialyear',array('size'=>44,'maxlength'=>44)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'paymentdate'); ?>
-		<?php echo $form->textField($model,'paymentdate'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'paymentmode'); ?>
-		<?php echo $form->textField($model,'paymentmode',array('size'=>12,'maxlength'=>12)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'paidamount'); ?>
-		<?php echo $form->textField($model,'paidamount',array('size'=>18,'maxlength'=>18)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'adjustedamount'); ?>
-		<?php echo $form->textField($model,'adjustedamount',array('size'=>18,'maxlength'=>18)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'chequedate'); ?>
-		<?php echo $form->textField($model,'chequedate'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'chequenumber'); ?>
-		<?php echo $form->textField($model,'chequenumber',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
+	<div class="span3 offset2">
 		<?php echo $form->label($model,'bankbranch'); ?>
 		<?php echo $form->textField($model,'bankbranch',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'remarks'); ?>
-		<?php echo $form->textArea($model,'remarks',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
-	</div>
+</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

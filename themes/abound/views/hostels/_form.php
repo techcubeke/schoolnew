@@ -3,6 +3,8 @@
 /* @var $model Hostels */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,19 +18,20 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'dormname'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'hostel name'); ?>
 		<?php echo $form->textField($model,'dormname',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'dormname'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'beds'); ?>
+	<div class="span3">
+		<?php echo $form->labelEx($model,'no of beds'); ?>
 		<?php echo $form->textField($model,'beds'); ?>
 		<?php echo $form->error($model,'beds'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

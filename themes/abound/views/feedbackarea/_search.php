@@ -3,6 +3,8 @@
 /* @var $model Feedbackarea */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,23 +13,15 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'feedbackID'); ?>
-		<?php echo $form->textField($model,'feedbackID'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'Title'); ?>
 		<?php echo $form->textField($model,'Title',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Description'); ?>
-		<?php echo $form->textArea($model,'Description',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Financialyear <?php echo $model->financialyearID; ?></h1>
+<h1>Update Financial year <?php echo $model->financialyearID; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

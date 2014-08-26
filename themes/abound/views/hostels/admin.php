@@ -44,8 +44,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'hostels-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
-		'dormID',
 		'dormname',
 		'beds',
 		array(

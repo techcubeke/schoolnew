@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Feedbackarea', 'url'=>array('index')),
-	array('label'=>'Create Feedbackarea', 'url'=>array('create')),
+	array('label'=>'List Feedback', 'url'=>array('index')),
+	array('label'=>'Create Feedback', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Feedbackareas</h1>
+<h1>Manage Feedback</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -42,8 +42,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'feedbackarea-grid',
-	'dataProvider'=>$model->search(),
+		'dataProvider'=>$model->search(),
 	'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
 		'feedbackID',
 		'Title',

@@ -4,7 +4,14 @@
 /* @var $form CActiveForm */
 ?>
 <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
+<link href="../../bootcombo/css/bootstrap-combobox.css" rel="stylesheet" type="text/css"/>
+<script src="../../bootcombo/js/bootstrap-combobox.js" type="text/javascript">
+</script>
+ <script type="text/javascript">
+      $(document).ready(function(){
+        $('.combobox').combobox();
+      });
+    </script>
 
 <div class="form">
 

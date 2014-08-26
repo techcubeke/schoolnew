@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Fuelconsumption #<?php echo $model->fuelID; ?></h1>
+<h1>View Fuel record #<?php echo $model->fuelID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

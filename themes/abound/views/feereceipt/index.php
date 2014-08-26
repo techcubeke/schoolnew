@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Feereceipts</h1>
+<h1>Fee receipts</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

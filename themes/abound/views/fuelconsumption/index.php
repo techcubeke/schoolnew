@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Fuelconsumptions</h1>
+<h1>Fuel consumption</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
