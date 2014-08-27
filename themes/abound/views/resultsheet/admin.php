@@ -44,14 +44,20 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'resultsheet-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
-		'resultsheetID',
 		'admin_no',
 		'examtype',
 		'maths',
 		'english',
 		'kiswahili',
-		/*
 		'biology',
 		'physics',
 		'chemistry',
@@ -73,7 +79,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'grade',
 		'position',
 		'positionstream',
-		*/
+		
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -3,6 +3,8 @@
 /* @var $model Parents */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,68 +13,15 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'parentID'); ?>
-		<?php echo $form->textField($model,'parentID'); ?>
-	</div>
-
+	
 	<div class="row">
 		<?php echo $form->label($model,'studentID'); ?>
 		<?php echo $form->textField($model,'studentID',array('size'=>44,'maxlength'=>44)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'fullname'); ?>
-		<?php echo $form->textField($model,'fullname',array('size'=>60,'maxlength'=>100)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'photoimage'); ?>
-		<?php echo $form->textField($model,'photoimage'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'parentrelation'); ?>
-		<?php echo $form->textField($model,'parentrelation',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'occupation'); ?>
-		<?php echo $form->textField($model,'occupation',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'officename'); ?>
-		<?php echo $form->textField($model,'officename',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'officeaddress'); ?>
-		<?php echo $form->textField($model,'officeaddress',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'phonenumber'); ?>
-		<?php echo $form->textField($model,'phonenumber',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'emailaddress'); ?>
-		<?php echo $form->textField($model,'emailaddress',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'datemodified'); ?>
-		<?php echo $form->textField($model,'datemodified'); ?>
-	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Parents</h1>
+<h1>Add new parent</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Parents <?php echo $model->parentID; ?></h1>
+<h1>Update Parent's  Details<?php echo $model->parentID; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
