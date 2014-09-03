@@ -3,47 +3,50 @@
 /* @var $model Appointment */
 
 $this->breadcrumbs=array(
-	'Appointments'=>array('index'),
-	'Manage',
+		'Appointments'=>array('index'),
+		'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'List Appointment', 'url'=>array('index')),
-	array('label'=>'Create Appointment', 'url'=>array('create')),
+		array('label'=>'List Appointment', 'url'=>array('index')),
+		array('label'=>'Create Appointment', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
+		$('.search-button').click(function(){
+		$('.search-form').toggle();
+		return false;
 });
-$('.search-form form').submit(function(){
-	$('#appointment-grid').yiiGridView('update', {
+		$('.search-form form').submit(function(){
+		$('#appointment-grid').yiiGridView('update', {
 		data: $(this).serialize()
-	});
-	return false;
 });
-");
+		return false;
+});
+		");
 ?>
 
 <h1>Manage Appointments</h1>
 
 <p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+	You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>,
+	<b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b> or <b>=</b>) at the
+	beginning of each of your search values to specify how the comparison
+	should be done.
 </p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
+<div class="search-form" style="display: none">
+	<?php $this->renderPartial('_search',array(
+			'model'=>$model,
 )); ?>
-</div><!-- search-form -->
+</div>
+<!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'appointment-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+		'id'=>'appointment-grid',
+		'dataProvider'=>$model->search(),
+		'filter'=>$model,
 		'htmlOptions' => array('class' => 'table table-striped'),
 		'pagerCssClass' => '',
 		'pager' => array(
@@ -53,16 +56,37 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 				'htmlOptions' => array('class' => 'pagination pagination-lg'),
 		),
 	'columns'=>array(
-		'staffID',
-		'appointmentdate',
-		'personname',
-		'purpose',
-		'contactnumber',
+
+					array(
+			'name' => 'staffID',
+		'htmlOptions' => array('style' => 'width: 60px;'),
+				'filterHtmlOptions' => array('style' => 'width: 60px;'),
+),					array(
+			'name' => 'appointmentdate',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),					array(
+			'name' => 'personname',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),
+							array(
+			'name' => 'purpose',
+		'htmlOptions' => array('style' => 'width: 220px;'),
+				'filterHtmlOptions' => array('style' => 'width: 220px;'),
+),
+			array(
+			'name' => 'contactnumber',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),
+
 		/*
-		'time',
-		*/
+		 'time',
+*/
 		array(
 			'class'=>'CButtonColumn',
 		),
 	),
+
 )); ?>

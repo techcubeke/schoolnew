@@ -25,7 +25,7 @@
     </div>
 
 	<div class="row buttons">
-		<button class="btn btn-success" type="submit">Create</button>
+		<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

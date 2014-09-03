@@ -58,6 +58,30 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'sessionclosedate',
 		'sessionstatus',
 		'dateadded',
+					array(
+			'name' => 'sessionyear',
+		'htmlOptions' => array('style' => 'width: 40px;'),
+				'filterHtmlOptions' => array('style' => 'width: 40px;'),
+),		
+			array(
+			'name' => 'sessionopendate',
+		'htmlOptions' => array('style' => 'width: 60px;'),
+				'filterHtmlOptions' => array('style' => 'width: 60px;'),
+),		
+			array(
+			'name' => 'sessionclosedate',
+		'htmlOptions' => array('style' => 'width: 60px;'),
+				'filterHtmlOptions' => array('style' => 'width: 60px;'),
+),		
+			array(
+			'name' => 'sessionstatus',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),					array(
+			'name' => 'dateadded',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),		
 		array(
 			'class'=>'CButtonColumn',
 		),

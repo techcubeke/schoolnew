@@ -53,8 +53,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 				'htmlOptions' => array('class' => 'pagination pagination-lg'),
 		),
 	'columns'=>array(
-		'feedbackID',
-		'Title',
+					array(
+			'name' => 'feedbackID',
+		'htmlOptions' => array('style' => 'width: 40px;'),
+				'filterHtmlOptions' => array('style' => 'width: 40px;'),
+),		
+				array(
+			'name' => 'Title',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),		
 		'Description',
 		array(
 			'class'=>'CButtonColumn',

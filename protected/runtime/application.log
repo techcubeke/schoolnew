@@ -456,3 +456,189 @@ Stack trace:
 REQUEST_URI=/@school/site/page?view=library
 HTTP_REFERER=http://localhost:8080/@school/examrecord
 ---
+2014/09/03 09:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/@school/feedbackarea/update/1
+---
+2014/09/03 09:43:52 [error] [exception.CException] exception 'CException' with message 'Property "Feedbackarea.feedbackareaID" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('feedbackareaID')
+#1 C:\wamp\Yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('feedbackareaID')
+#2 C:\wamp\Yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Feedbackarea), 'feedbackareaID')
+#3 C:\wamp\Yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Feedbackarea), 'feedbackareaID', Array)
+#4 C:\wamp\Yii\framework\zii\widgets\grid\CDataColumn.php(97): CHtml::activeTextField(Object(Feedbackarea), 'feedbackareaID', Array)
+#5 C:\wamp\Yii\framework\zii\widgets\grid\CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#6 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(505): CGridColumn->renderFilterCell()
+#7 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(483): CGridView->renderFilter()
+#8 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(453): CGridView->renderTableHeader()
+#9 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#13 C:\wamp\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 C:\wamp\www\@school\themes\abound\views\feedbackarea\admin.php(71): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#16 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#17 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#18 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#19 C:\wamp\www\@school\protected\controllers\FeedbackareaController.php(143): CController->render('admin', Array)
+#20 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): FeedbackareaController->actionAdmin()
+#21 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#30 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feedbackarea/ad...')
+#31 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 C:\wamp\www\@school\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/@school/feedbackarea/admin
+HTTP_REFERER=http://localhost:8080/@school/feedbackarea/1
+---
+2014/09/03 09:49:55 [error] [exception.CException] exception 'CException' with message 'Property "Academicsession.sessionsclosedate" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sessionscloseda...')
+#1 C:\wamp\Yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('sessionscloseda...')
+#2 C:\wamp\Yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Academicsession), 'sessionscloseda...')
+#3 C:\wamp\Yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Academicsession), 'sessionscloseda...', Array)
+#4 C:\wamp\Yii\framework\zii\widgets\grid\CDataColumn.php(97): CHtml::activeTextField(Object(Academicsession), 'sessionscloseda...', Array)
+#5 C:\wamp\Yii\framework\zii\widgets\grid\CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#6 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(505): CGridColumn->renderFilterCell()
+#7 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(483): CGridView->renderFilter()
+#8 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(453): CGridView->renderTableHeader()
+#9 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#13 C:\wamp\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 C:\wamp\www\@school\themes\abound\views\academicsession\admin.php(89): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#16 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#17 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#18 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#19 C:\wamp\www\@school\protected\controllers\AcademicsessionController.php(143): CController->render('admin', Array)
+#20 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): AcademicsessionController->actionAdmin()
+#21 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#30 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('academicsession...')
+#31 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 C:\wamp\www\@school\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/@school/academicsession/admin
+HTTP_REFERER=http://localhost:8080/@school/academicsession/create
+---
+2014/09/03 10:15:16 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.0" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\Yii\framework\YiiBase.php(220): CComponent->__set('0', Array)
+#1 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(363): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp\www\@school\themes\abound\views\appointment\admin.php(87): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#7 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#8 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#9 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\wamp\www\@school\protected\controllers\AppointmentController.php(143): CController->render('admin', Array)
+#11 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): AppointmentController->actionAdmin()
+#12 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('appointment/adm...')
+#22 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\wamp\www\@school\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/@school/appointment/admin
+HTTP_REFERER=http://localhost:8080/@school/appointment
+---
+2014/09/03 10:17:48 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.0" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\Yii\framework\YiiBase.php(220): CComponent->__set('0', Array)
+#1 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(363): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp\www\@school\themes\abound\views\appointment\admin.php(91): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#7 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#8 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#9 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\wamp\www\@school\protected\controllers\AppointmentController.php(143): CController->render('admin', Array)
+#11 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): AppointmentController->actionAdmin()
+#12 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('appointment/adm...')
+#22 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\wamp\www\@school\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/@school/appointment/admin
+HTTP_REFERER=http://localhost:8080/@school/appointment
+---
+2014/09/03 10:18:38 [error] [exception.CException] exception 'CException' with message 'Property "Appointment.conatctnumber" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('conatctnumber')
+#1 C:\wamp\Yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('conatctnumber')
+#2 C:\wamp\Yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Appointment), 'conatctnumber')
+#3 C:\wamp\Yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Appointment), 'conatctnumber', Array)
+#4 C:\wamp\Yii\framework\zii\widgets\grid\CDataColumn.php(97): CHtml::activeTextField(Object(Appointment), 'conatctnumber', Array)
+#5 C:\wamp\Yii\framework\zii\widgets\grid\CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#6 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(505): CGridColumn->renderFilterCell()
+#7 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(483): CGridView->renderFilter()
+#8 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(453): CGridView->renderTableHeader()
+#9 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#13 C:\wamp\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 C:\wamp\www\@school\themes\abound\views\appointment\admin.php(92): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#16 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#17 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#18 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#19 C:\wamp\www\@school\protected\controllers\AppointmentController.php(143): CController->render('admin', Array)
+#20 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): AppointmentController->actionAdmin()
+#21 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#30 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('appointment/adm...')
+#31 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 C:\wamp\www\@school\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/@school/appointment/admin
+HTTP_REFERER=http://localhost:8080/@school/appointment
+---

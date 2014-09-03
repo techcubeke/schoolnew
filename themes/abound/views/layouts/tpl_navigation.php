@@ -83,11 +83,12 @@
                         /*array('label'=>'Gii generated', 'url'=>array('customer/index')),*/
                         array('label'=>'Setup <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
                         'items'=>array(
-							array('label'=>'Users<span class="badge badge-info pull-right"></span>', 'url'=>array('/user')),
-							array('label'=>'Roles<span class="badge badge-info pull-right"></span>', 'url'=>array('/userrole')),
-							array('label'=>'Departments<span class="badge badge-info pull-right"></span>', 'url'=>array('/department')), 
-							array('label'=>'Financial Year<span class="badge badge-info pull-right"></span>', 'url'=>array('/financialyear')),            
+							array('label'=>'Users', 'url'=>array('/user')),
+							array('label'=>'Roles', 'url'=>array('/userrole')),
+							array('label'=>'Departments', 'url'=>array('/department')), 
+							array('label'=>'Financial Year', 'url'=>array('/financialyear')),
                     )),
+                    		array('label'=>'Help', 'url'=>array('/site/contact')),
                         array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                     ),

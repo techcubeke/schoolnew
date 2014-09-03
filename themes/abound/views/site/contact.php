@@ -8,6 +8,8 @@ $this->breadcrumbs=array(
 	'Contact',
 );
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <h1>Contact Us</h1>
 
@@ -38,29 +40,30 @@ If you have business inquiries or other questions, please fill out the following
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+    <div class="span3">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name'); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email'); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
-
-	<div class="row">
+</div>
+<div class="row">
+	<div class="span3 ">
 		<?php echo $form->labelEx($model,'subject'); ?>
 		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'subject'); ?>
 	</div>
-
-	<div class="row">
+    <div class="span3 offset1">
 		<?php echo $form->labelEx($model,'body'); ?>
 		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'body'); ?>
 	</div>
-
+</div>
 	<?php if(CCaptcha::checkRequirements()): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'verifyCode'); ?>
@@ -75,7 +78,7 @@ If you have business inquiries or other questions, please fill out the following
 	<?php endif; ?>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<button class="btn btn-success" type="submit">Send</button>
 	</div>
 
 <?php $this->endWidget(); ?>

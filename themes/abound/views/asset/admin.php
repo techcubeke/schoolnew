@@ -53,6 +53,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 				'htmlOptions' => array('class' => 'pagination pagination-lg'),
 		),
 	'columns'=>array(
+				/*
 		'label',
 		'assettype',
 		'description',
@@ -60,9 +61,41 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'currentvalue',
 		'quantity',
 		'departmentcode',
-				/*
-		'accessiondate',
+				'accessiondate',
 		*/
+					array(
+			'name' => 'label',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),		
+			array(
+			'name' => 'assettype',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),		
+			array(
+			'name' => 'description',
+		'htmlOptions' => array('style' => 'width: 170px;'),
+				'filterHtmlOptions' => array('style' => 'width: 170px;'),
+),		
+			array(
+			'name' => 'originalvalue',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),					array(
+			'name' => 'currentvalue',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),		
+			array(
+			'name' => 'quantity',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),					array(
+			'name' => 'departmentcode',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),		
 		array(
 			'class'=>'CButtonColumn',
 		),
