@@ -102,7 +102,13 @@
 			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feetermdate'">Adjust Fee Termdates</button>
 	</div>
 </div>
-
+<br />
+<br />
+<div class="row">
+	<div class="span3 offset1">
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../bankaccounts'">Manage Bank accounts</button>
+	</div>
+</div>
 <br />
 <br />
 <br  />

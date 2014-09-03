@@ -56,6 +56,7 @@
 							array('label'=>'Fee Receipt', 'url'=>array('/feereceipt')),
 							array('label'=>'Fee Structure', 'url'=>array('/feestructure')),
                         		array('label'=>'Fee Termdates', 'url'=>array('/feetermdate')),
+                        		array('label'=>'Banking Details', 'url'=>array('/bankaccounts')),
  
                         )),   
                     	       array('label'=>'Transport', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
