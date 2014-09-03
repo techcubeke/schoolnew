@@ -215,3 +215,244 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/@school/bank
 ---
+2014/08/28 07:42:32 [error] [exception.CException] exception 'CException' with message 'Property "Staff.department" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('department')
+#1 C:\wamp\Yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('department')
+#2 C:\wamp\Yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Staff), 'department')
+#3 C:\wamp\Yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Staff), 'department', Array)
+#4 C:\wamp\Yii\framework\zii\widgets\grid\CDataColumn.php(97): CHtml::activeTextField(Object(Staff), 'department', Array)
+#5 C:\wamp\Yii\framework\zii\widgets\grid\CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#6 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(505): CGridColumn->renderFilterCell()
+#7 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(483): CGridView->renderFilter()
+#8 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(453): CGridView->renderTableHeader()
+#9 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#13 C:\wamp\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 C:\wamp\www\@school\themes\abound\views\staff\admin.php(84): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#16 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#17 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#18 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#19 C:\wamp\www\@school\protected\controllers\StaffController.php(143): CController->render('admin', Array)
+#20 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionAdmin()
+#21 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#30 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff/admin')
+#31 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 C:\wamp\www\@school\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/@school/staff/admin
+HTTP_REFERER=http://localhost:8080/@school/staff/create
+---
+2014/08/28 09:21:28 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in C:\wamp\Yii\framework\zii\widgets\grid\CDataColumn.php:78
+Stack trace:
+#0 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(376): CDataColumn->init()
+#1 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\@school\themes\abound\views\transportation\admin.php(71): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#6 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#7 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#8 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 C:\wamp\www\@school\protected\controllers\TransportationController.php(143): CController->render('admin', Array)
+#10 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): TransportationController->actionAdmin()
+#11 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('transportation/...')
+#21 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 C:\wamp\www\@school\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/@school/transportation/admin
+HTTP_REFERER=http://localhost:8080/@school/transportation
+---
+2014/08/28 09:23:13 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.style" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\Yii\framework\YiiBase.php(220): CComponent->__set('style', 'width: 30px;')
+#1 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(363): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp\www\@school\themes\abound\views\transportation\admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#7 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#8 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#9 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\wamp\www\@school\protected\controllers\TransportationController.php(143): CController->render('admin', Array)
+#11 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): TransportationController->actionAdmin()
+#12 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('transportation/...')
+#22 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\wamp\www\@school\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/@school/transportation/admin
+HTTP_REFERER=http://localhost:8080/@school/transportation
+---
+2014/08/28 10:05:33 [error] [exception.CException] exception 'CException' with message 'Property "Vehicle.sittingcapacity" is not defined.' in C:\wamp\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sittingcapacity')
+#1 C:\wamp\Yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('sittingcapacity')
+#2 C:\wamp\Yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Vehicle), 'sittingcapacity')
+#3 C:\wamp\Yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Vehicle), 'sittingcapacity', Array)
+#4 C:\wamp\Yii\framework\zii\widgets\grid\CDataColumn.php(97): CHtml::activeTextField(Object(Vehicle), 'sittingcapacity', Array)
+#5 C:\wamp\Yii\framework\zii\widgets\grid\CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#6 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(505): CGridColumn->renderFilterCell()
+#7 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(483): CGridView->renderFilter()
+#8 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(453): CGridView->renderTableHeader()
+#9 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 C:\wamp\Yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#13 C:\wamp\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 C:\wamp\www\@school\themes\abound\views\vehicle\admin.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#16 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', Array, true)
+#17 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', Array, true)
+#18 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#19 C:\wamp\www\@school\protected\controllers\VehicleController.php(143): CController->render('admin', Array)
+#20 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): VehicleController->actionAdmin()
+#21 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#30 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('vehicle/admin')
+#31 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 C:\wamp\www\@school\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/@school/vehicle/admin
+HTTP_REFERER=http://localhost:8080/@school/vehicle/create
+---
+2014/08/28 14:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hostel 1".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('hostel 1')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('hostel 1')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('hostels/hostel ...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\@school\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/@school/hostels/hostel+1
+HTTP_REFERER=http://localhost:8080/@school/hostels/create
+---
+2014/08/28 14:28:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hostel 1".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('hostel 1')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('hostel 1')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('hostels/hostel ...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\@school\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/@school/hostels/hostel+1
+HTTP_REFERER=http://localhost:8080/@school/hostels
+---
+2014/08/28 14:32:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('hostels/delete/...')
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\@school\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/@school/hostels/delete/hostel+1
+HTTP_REFERER=http://localhost:8080/@school/hostels/admin
+---
+2014/08/28 14:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hostel 1".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('hostel 1')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('hostel 1')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('hostels/hostel ...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\@school\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/@school/hostels/hostel+1
+HTTP_REFERER=http://localhost:8080/@school/hostels
+---
+2014/08/28 14:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hostel 1".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('hostel 1')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('hostel 1')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('hostels/hostel ...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\@school\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/@school/hostels/hostel+1
+HTTP_REFERER=http://localhost:8080/@school/hostels/admin
+---
+2014/08/29 12:43:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "@school/user".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('@school/user')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/@school/user
+HTTP_REFERER=http://localhost:8080/@school/
+---
+2014/08/29 12:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request " staff".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController(' staff')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/%20staff
+HTTP_REFERER=http://localhost:8080/@school/site/index
+---
+2014/08/29 14:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "grade".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('grade')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/grade
+HTTP_REFERER=http://localhost:8080/@school/student
+---
+2014/09/03 08:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "library" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('library')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\@school\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/@school/site/page?view=library
+HTTP_REFERER=http://localhost:8080/@school/examrecord
+---

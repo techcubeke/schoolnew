@@ -42,19 +42,51 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'vehicle-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+			'dataProvider'=>$model->search(),
+		'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
-		'vehicleID',
+			/*'vehicleID',
 		'vehicleregnumber',
 		'manufacturingyear',
 		'vehicletype',
 		'sitingcapacity',
 		'status',
-		/*
 		'dateadded',
 		'datemodified',
 		*/
+				array(
+			'name' => 'vehicleID',
+		'htmlOptions' => array('style' => 'width: 40px;'),
+				'filterHtmlOptions' => array('style' => 'width: 40px;'),
+),					
+					array(
+			'name' => 'vehicleregnumber',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),
+						array(
+			'name' => 'manufacturingyear',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),				
+								array(
+			'name' => 'vehicletype',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),						
+								array(
+			'name' => 'sitingcapacity',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),
 		array(
 			'class'=>'CButtonColumn',
 		),

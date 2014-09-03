@@ -3,6 +3,8 @@
 /* @var $model Transportation */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,25 +18,26 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'studentID'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'student admin no'); ?>
 		<?php echo $form->textField($model,'studentID',array('size'=>44,'maxlength'=>44)); ?>
 		<?php echo $form->error($model,'studentID'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'stopID'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'Route name'); ?>
 		<?php echo $form->textField($model,'stopID',array('size'=>44,'maxlength'=>44)); ?>
 		<?php echo $form->error($model,'stopID'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'ispaid'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'paid?'); ?>
 		<?php echo $form->textField($model,'ispaid',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'ispaid'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

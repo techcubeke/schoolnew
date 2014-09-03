@@ -43,21 +43,59 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'vendor-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+		'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
-		'vendorID',
+			/*'vendorID',
 		'initials',
 		'photoimage',
 		'firstname',
 		'lastname',
 		'vendortype',
-		/*
 		'address',
 		'phoneno',
 		'email',
 		'dateadded',
 		'notes',
 		*/
+			array(
+			'name' => 'vendorID',
+		'htmlOptions' => array('style' => 'width: 40px;'),
+				'filterHtmlOptions' => array('style' => 'width: 40px;'),
+),				
+					
+			array(
+			'name' => 'initials',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),				
+			array(
+			'name' => 'firstname',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),				
+			array(
+			'name' => 'vendortype',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),				
+			array(
+			'name' => 'address',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),				
+			array(
+			'name' => 'email',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),				
 		array(
 			'class'=>'CButtonColumn',
 		),

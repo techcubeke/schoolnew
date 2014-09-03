@@ -42,15 +42,38 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'user-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+		'dataProvider'=>$model->search(),
+		'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
-		'userID',
-		'username',
-		'password',
-		'dateadded',
-		'datemodified',
-		'userrole',
+	
+			array(
+			'name' => 'userID',
+		'htmlOptions' => array('style' => 'width: 40px;'),
+				'filterHtmlOptions' => array('style' => 'width: 40px;'),
+),
+		array(
+			'name' => 'username',
+		'htmlOptions' => array('style' => 'width: 90px;'),
+				'filterHtmlOptions' => array('style' => 'width: 90px;'),
+),				
+					array(
+			'name' => 'dateadded',
+		'htmlOptions' => array('style' => 'width: 80px;'),
+				'filterHtmlOptions' => array('style' => 'width: 80px;'),
+),					
+						array(
+			'name' => 'userrole',
+		'htmlOptions' => array('style' => 'width: 70px;'),
+				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+),
 		array(
 			'class'=>'CButtonColumn',
 		),

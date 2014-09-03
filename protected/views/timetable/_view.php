@@ -29,9 +29,15 @@
 	<?php echo CHtml::encode($data->periodID); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('time')); ?>:</b>
+	<?php echo CHtml::encode($data->time); ?>
+	<br />
+
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('dateadded')); ?>:</b>
 	<?php echo CHtml::encode($data->dateadded); ?>
 	<br />
 
+	*/ ?>
 
 </div>

@@ -42,6 +42,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'time'); ?>
+		<?php echo $form->textField($model,'time'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'dateadded'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 	</div>

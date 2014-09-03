@@ -27,6 +27,7 @@ $this->menu=array(
 		'staffID',
 		'subject',
 		'periodID',
+		'time',
 		'dateadded',
 	),
 )); ?>

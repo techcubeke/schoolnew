@@ -3,6 +3,8 @@
 /* @var $model Timetable */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,44 +13,18 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'timetableID'); ?>
-		<?php echo $form->textField($model,'timetableID'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'academic_year'); ?>
-		<?php echo $form->textField($model,'academic_year',array('size'=>44,'maxlength'=>44)); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'classroom'); ?>
 		<?php echo $form->textField($model,'classroom',array('size'=>44,'maxlength'=>44)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'staffID'); ?>
-		<?php echo $form->textField($model,'staffID'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>44,'maxlength'=>44)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'periodID'); ?>
-		<?php echo $form->textField($model,'periodID'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
-	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
-	</div>
+			<button class="btn btn-primary" type="submit">Search</button>
+            	</div>
 
 <?php $this->endWidget(); ?>
 

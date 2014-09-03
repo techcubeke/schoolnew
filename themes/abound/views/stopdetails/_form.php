@@ -3,6 +3,8 @@
 /* @var $model Stopdetails */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,49 +18,52 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'routeID'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'route code'); ?>
 		<?php echo $form->textField($model,'routeID'); ?>
 		<?php echo $form->error($model,'routeID'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'stopname'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'stop name'); ?>
 		<?php echo $form->textField($model,'stopname',array('size'=>60,'maxlength'=>120)); ?>
 		<?php echo $form->error($model,'stopname'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'fare'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'cost'); ?>
 		<?php echo $form->textField($model,'fare',array('size'=>60,'maxlength'=>120)); ?>
 		<?php echo $form->error($model,'fare'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'arrivalmrng'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'arrival mrng'); ?>
 		<?php echo $form->textField($model,'arrivalmrng'); ?>
 		<?php echo $form->error($model,'arrivalmrng'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'depaturemrng'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'depature mrng'); ?>
 		<?php echo $form->textField($model,'depaturemrng'); ?>
 		<?php echo $form->error($model,'depaturemrng'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'arrivalevng'); ?>
-		<?php echo $form->textField($model,'arrivalevng'); ?>
-		<?php echo $form->error($model,'arrivalevng'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'depatureevng'); ?>
+	<div class="span3 offset2">
+    
+		<?php echo $form->labelEx($model,'depature evng'); ?>
 		<?php echo $form->textField($model,'depatureevng'); ?>
 		<?php echo $form->error($model,'depatureevng'); ?>
 	</div>
 
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'arrival evng'); ?>
+		<?php echo $form->textField($model,'arrivalevng'); ?>
+		<?php echo $form->error($model,'arrivalevng'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

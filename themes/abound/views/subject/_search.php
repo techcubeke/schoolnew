@@ -3,6 +3,8 @@
 /* @var $model Subject */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -12,32 +14,19 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'subjectID'); ?>
-		<?php echo $form->textField($model,'subjectID'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'subjectname'); ?>
+	<div class="span3">
+    	<?php echo $form->label($model,'subjectname'); ?>
 		<?php echo $form->textField($model,'subjectname',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'subjectgroup'); ?>
-		<?php echo $form->textField($model,'subjectgroup',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->label($model,'subjectcode'); ?>
 		<?php echo $form->textField($model,'subjectcode'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
-	</div>
+</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

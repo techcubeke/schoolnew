@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Visitorpass</h1>
+<h1>Visitor sign in</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

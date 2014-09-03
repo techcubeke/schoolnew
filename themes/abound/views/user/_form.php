@@ -3,6 +3,8 @@
 /* @var $model User */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,37 +18,39 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'user name'); ?>
 		<?php echo $form->textField($model,'username',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'dateadded'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'date added'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'datemodified'); ?>
+		<div class="span3">
+		<?php echo $form->labelEx($model,'date modified'); ?>
 		<?php echo $form->textField($model,'datemodified'); ?>
 		<?php echo $form->error($model,'datemodified'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'userrole'); ?>
 		<?php echo $form->textField($model,'userrole',array('size'=>5,'maxlength'=>5)); ?>
 		<?php echo $form->error($model,'userrole'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

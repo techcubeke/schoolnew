@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Curriculumplan</h1>
+<h1>Add New Curriculum Plan</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

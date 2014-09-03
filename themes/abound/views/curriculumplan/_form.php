@@ -25,13 +25,13 @@
 	</div>
 
 	<div class="span3 offset1">
-		<?php echo $form->labelEx($model,'bookID'); ?>
+		<?php echo $form->labelEx($model,'book name'); ?>
 		<?php echo $form->textField($model,'bookID',array('size'=>44,'maxlength'=>44)); ?>
 		<?php echo $form->error($model,'bookID'); ?>
 	</div>
 
 	<div class="span3 offset2">
-		<?php echo $form->labelEx($model,'planmonth'); ?>
+		<?php echo $form->labelEx($model,'plan month'); ?>
 		<?php echo $form->textField($model,'planmonth',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'planmonth'); ?>
 	</div>
@@ -43,7 +43,7 @@
 		<?php echo $form->error($model,'topic'); ?>
 	</div>
     <div class="span3 offset1">
-		<?php echo $form->labelEx($model,'subtopic'); ?>
+		<?php echo $form->labelEx($model,'sub topic'); ?>
 		<?php echo $form->textField($model,'subtopic',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'subtopic'); ?>
 	</div>

@@ -2,15 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Admin Portal</title>
+<title>Store portal</title>
 <link href="../../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <div class="page-header">
-  <h1 class="offset5">Admin <small>Portal</small></h1>
+  <h1 class="offset5">Store<small> Portal</small></h1>
 </div>
 </head>
 <link href="../../../../themes/abound/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 <body>
+
 	<div class="span3">
 		<div class="sidebar-nav">
         
@@ -20,7 +21,7 @@
 			'items'=>array(
 				array('label'=>'<i class="icon icon-home"></i>  Dashboard <span class="label label-info pull-right">BETA</span>', 'url'=>array('/site/index'),'itemOptions'=>array('class'=>'')),
 				array('label'=>'<i class="icon icon-search"></i> About this Application<span class="label label-important pull-right">NEW</span>', 'url'=>'http://www.techcube.co.ke/schoolapp'),
-				array('label'=>'<i class="icon icon-envelope"></i> Admin Portal <span class="badge badge-success pull-right"></span>', 'url'=>'#'),
+				array('label'=>'<i class="icon icon-envelope"></i>Transport Management Portal <span class="badge badge-success pull-right"></span>', 'url'=>'#'),
 				// Include the operations menu
 				array('label'=>'OPERATIONS','items'=>$this->menu),
 			),
@@ -70,7 +71,7 @@
               <dd>Premium</dd>
               <dt>IEducate App</dt>
               <dd>&copy; <?php echo date("Y") ?></dd>
-              <dt>Support</dt>
+              <dt>Support Contact</dt>
               <dd>254728944815</dd>
                <dt>Date</dt>
               <dd> <?php echo date("d/m/y") ?></dd>
@@ -81,65 +82,25 @@
 		
     </div><!--/span-->
     <div class="span9">
-    
 
 <div class="row">
 	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../classroom'">classroom</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../bookstock'">Book Stock</button>
 	</div>
 	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../hostels'">Hostels</button>
-	</div>
-</div>
-<br />
-<br  />
-<div class="row">
-	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../curriculum'">Curriculum</button>
-	</div>
-	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../curriculumplan'">Curriculum plan</button>
-	</div>
-</div>
-
-<br />
-<br />
-<br  />
-<div class="row">
-	<div class="span3 offset1">
 			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../asset'">Assets</button>
 	</div>
-	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../vendor'">Vendors</button>
-	</div>
-</div>
+</div><br />
+
+
 <br />
 <br />
-<br />
-<div class="row">
-	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../eventplan'">Events</button>
-	</div>
-	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../schoolinfo'">School Info</button>
-	</div>
-</div>
-<br />
-<br />
-<br />
-<div class=" row">
-<div class="span3 offset1">
-<button  class="btn btn-info" type="submit" onclick="document.location.href='../staff'">Staff</button>
-</div>
-</div>
-<br />
-<br />
-<br />
+<br  />
 <div class="well">
         
             <dl class="dl-horizontal">
               <dt>Note:</dt>
-              <dd>Admin portal</dd>
+              <dd>Store Portal</dd>
               <dt>@School App</dt>
               <dt>&copy; <?php echo date("Y") ?></dt>
                <dt>Date: <?php echo date("d/m/y") ?></dt>

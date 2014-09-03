@@ -46,6 +46,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'time'); ?>
+		<?php echo $form->textField($model,'time'); ?>
+		<?php echo $form->error($model,'time'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'dateadded'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 		<?php echo $form->error($model,'dateadded'); ?>

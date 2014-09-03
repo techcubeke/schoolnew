@@ -22,11 +22,12 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'timetableID',
+		'periodID',
 		'academic_year',
 		'classroom',
 		'staffID',
 		'subject',
-		'periodID',
+		'time',
 		'dateadded',
 	),
 )); ?>

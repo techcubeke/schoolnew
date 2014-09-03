@@ -42,13 +42,38 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'userrole-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+			'dataProvider'=>$model->search(),
+		'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
-		'roleID',
-		'role',
-		'roledescription',
-		'dateadded',
+				
+			array(
+			'name' => 'roleID',
+		'htmlOptions' => array('style' => 'width: 30px;'),
+				'filterHtmlOptions' => array('style' => 'width: 30px;'),
+),
+				array(
+			'name' => 'role',
+		'htmlOptions' => array('style' => 'width: 120px;'),
+				'filterHtmlOptions' => array('style' => 'width: 120px;'),
+),
+					array(
+			'name' => 'roledescription',
+		'htmlOptions' => array('style' => 'width: 170px;'),
+				'filterHtmlOptions' => array('style' => 'width: 170px;'),
+),
+					array(
+			'name' => 'dateadded',
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+),
 		array(
 			'class'=>'CButtonColumn',
 		),

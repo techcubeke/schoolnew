@@ -23,7 +23,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'vendorID',
 		'initials',
-		'photoimage',
 		'firstname',
 		'lastname',
 		'vendortype',

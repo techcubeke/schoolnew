@@ -3,6 +3,8 @@
 /* @var $model Visitorpass */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,80 +18,83 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'visitorname'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'visitor name'); ?>
 		<?php echo $form->textField($model,'visitorname',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'visitorname'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'visitorcardnumber'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'visitor card number'); ?>
 		<?php echo $form->textField($model,'visitorcardnumber'); ?>
 		<?php echo $form->error($model,'visitorcardnumber'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'address'); ?>
 		<?php echo $form->textArea($model,'address',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'address'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'contactnumber'); ?>
+		<div class="span3">
+		<?php echo $form->labelEx($model,'contact number'); ?>
 		<?php echo $form->textField($model,'contactnumber',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'contactnumber'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'numberofvisitors'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'number of visitors'); ?>
 		<?php echo $form->textField($model,'numberofvisitors'); ?>
 		<?php echo $form->error($model,'numberofvisitors'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'visitpurpose'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'visit purpose'); ?>
 		<?php echo $form->textField($model,'visitpurpose',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'visitpurpose'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'meetingwith'); ?>
+		<div class="span3">
+		<?php echo $form->labelEx($model,'meeting with'); ?>
 		<?php echo $form->textField($model,'meetingwith',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'meetingwith'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'visitdate'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'visit date'); ?>
 		<?php echo $form->textField($model,'visitdate'); ?>
 		<?php echo $form->error($model,'visitdate'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'intime'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'in time'); ?>
 		<?php echo $form->textField($model,'intime'); ?>
 		<?php echo $form->error($model,'intime'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'outtime'); ?>
+		<div class="span3">
+		<?php echo $form->labelEx($model,'out time'); ?>
 		<?php echo $form->textField($model,'outtime'); ?>
 		<?php echo $form->error($model,'outtime'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'comments'); ?>
 		<?php echo $form->textArea($model,'comments',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'comments'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'dateadded'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'date added'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
+		  <button class="btn btn-success" type="submit">Create</button>
+        	</div>
 
 <?php $this->endWidget(); ?>
 

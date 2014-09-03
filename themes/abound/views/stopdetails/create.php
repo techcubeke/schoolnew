@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Stopdetails</h1>
+<h1>Add Vehicle Stopdeatils</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

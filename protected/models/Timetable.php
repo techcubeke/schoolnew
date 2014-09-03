@@ -10,6 +10,7 @@
  * @property integer $staffID
  * @property string $subject
  * @property integer $periodID
+ * @property string $time
  * @property string $dateadded
  */
 class Timetable extends CActiveRecord
@@ -42,10 +43,10 @@ class Timetable extends CActiveRecord
 		return array(
 			array('staffID, periodID', 'numerical', 'integerOnly'=>true),
 			array('academic_year, classroom, subject', 'length', 'max'=>44),
-			array('dateadded', 'safe'),
+			array('time, dateadded', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('timetableID, academic_year, classroom, staffID, subject, periodID, dateadded', 'safe', 'on'=>'search'),
+			array('timetableID, academic_year, classroom, staffID, subject, periodID, time, dateadded', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -72,6 +73,7 @@ class Timetable extends CActiveRecord
 			'staffID' => 'Staff',
 			'subject' => 'Subject',
 			'periodID' => 'Period',
+			'time' => 'Time',
 			'dateadded' => 'Dateadded',
 		);
 	}
@@ -93,6 +95,7 @@ class Timetable extends CActiveRecord
 		$criteria->compare('staffID',$this->staffID);
 		$criteria->compare('subject',$this->subject,true);
 		$criteria->compare('periodID',$this->periodID);
+		$criteria->compare('time',$this->time,true);
 		$criteria->compare('dateadded',$this->dateadded,true);
 
 		return new CActiveDataProvider($this, array(

@@ -89,7 +89,7 @@
 			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../student'">Student details</button>
 	</div>
 	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../examrecord'">Exam records</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../resultsheet'">Exam records</button>
 	</div>
 </div>
 <br />
@@ -102,7 +102,16 @@
 			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../grades'">Grades</button>
 	</div>
 </div>
-
+<br />
+<br  />
+<div class="row">
+	<div class="span3 offset1">
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../subject'">Subject</button>
+	</div>
+	<div class="span3 offset2">
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../timetable'">Timetable</button>
+	</div>
+</div>
 <br />
 <br />
 <br  />

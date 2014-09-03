@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Userrole #<?php echo $model->roleID; ?></h1>
+<h1>View role #<?php echo $model->roleID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

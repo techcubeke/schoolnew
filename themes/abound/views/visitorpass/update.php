@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Visitorpass <?php echo $model->visitorpassID; ?></h1>
+<h1>Update Visitor Details <?php echo $model->visitorpassID; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

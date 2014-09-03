@@ -42,8 +42,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'student-grid',
-	'dataProvider'=>$model->search(),
+		'dataProvider'=>$model->search(),
 	'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
 		'studentID',
 		'academic_year',
@@ -51,10 +59,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'hostel',
 		'adminno',
 		'firstname',
+		'lastname',
+		'gender',
+		'dateofbirth',
 		/*
 		'middlename',
-		'lastname',
-		'dateofbirth',
 		'citizenship',
 		'parentname',
 		'photoimage',
@@ -62,7 +71,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'postaladress',
 		'email',
 		'admindate',
-		'gender',
 		'religion',
 		*/
 		array(

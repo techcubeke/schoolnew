@@ -3,6 +3,8 @@
 /* @var $model Subject */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,31 +18,32 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'subjectname'); ?>
+    <div class="span3">
+		<?php echo $form->labelEx($model,'subject name'); ?>
 		<?php echo $form->textField($model,'subjectname',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'subjectname'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'subjectgroup'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'subject group'); ?>
 		<?php echo $form->textField($model,'subjectgroup',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'subjectgroup'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'subjectcode'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'subject code'); ?>
 		<?php echo $form->textField($model,'subjectcode'); ?>
 		<?php echo $form->error($model,'subjectcode'); ?>
 	</div>
-
+</div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'dateadded'); ?>
+		<?php echo $form->labelEx($model,'datea dded'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<button class="btn btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>
