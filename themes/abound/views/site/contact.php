@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors',0);
 /* @var $this SiteController */
 /* @var $model ContactForm */
 /* @var $form CActiveForm */

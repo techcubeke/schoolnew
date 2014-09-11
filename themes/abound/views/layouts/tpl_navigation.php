@@ -48,6 +48,7 @@
 							array('label'=>'Grading', 'url'=>array('/grades')),
                         		array('label'=>'Subjects', 'url'=>array('/subject')),
                         		array('label'=>'timetable', 'url'=>array('/timetable')),
+                        		array('label'=>'Exam results', 'url'=>array('/resultsheet')),
                         )),   
                     	        array('label'=>'Fees', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
                         'items'=>array(

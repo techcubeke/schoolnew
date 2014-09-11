@@ -15,8 +15,8 @@
 
 
 	<div class="row">
-		<?php echo $form->label($model,'hostel name'); ?>
-		<?php echo $form->textField($model,'dormname',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->label($model,'hostelname'); ?>
+		<?php echo $form->textField($model,'hostelname',array('size'=>60,'maxlength'=>108)); ?>
 	</div>
 
 	<div class="row buttons">

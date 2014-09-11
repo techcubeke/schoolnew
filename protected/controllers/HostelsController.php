@@ -71,7 +71,7 @@ class HostelsController extends Controller
 		{
 			$model->attributes=$_POST['Hostels'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->dormname));
+				$this->redirect(array('view','id'=>$model->hostelID));
 		}
 
 		$this->render('create',array(
@@ -95,7 +95,7 @@ class HostelsController extends Controller
 		{
 			$model->attributes=$_POST['Hostels'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->dormname));
+				$this->redirect(array('view','id'=>$model->hostelID));
 		}
 
 		$this->render('update',array(

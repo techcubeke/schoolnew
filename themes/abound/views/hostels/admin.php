@@ -42,8 +42,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'hostels-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+		'dataProvider'=>$model->search(),
+		'filter'=>$model,
 		'htmlOptions' => array('class' => 'table table-striped'),
 		'pagerCssClass' => '',
 		'pager' => array(
@@ -53,21 +53,18 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 				'htmlOptions' => array('class' => 'pagination pagination-lg'),
 		),
 	'columns'=>array(
-		/*'dormname',
+		/*'hostelID',
+		'hostelname',
 		'beds',*/
-					array(
-			'name' => 'dormID',
-		'htmlOptions' => array('style' => 'width: 40px;'),
-				'filterHtmlOptions' => array('style' => 'width: 40px;'),
-),		
-						array(
-			'name' => 'dormname',
-		'htmlOptions' => array('style' => 'width: 100px;'),
-				'filterHtmlOptions' => array('style' => 'width: 100px;'),
+			
+			array(
+			'name' => 'hostelname',
+		'htmlOptions' => array('style' => 'width: 160px;'),
+				'filterHtmlOptions' => array('style' => 'width: 160px;'),
 ),					array(
 			'name' => 'beds',
-		'htmlOptions' => array('style' => 'width: 70px;'),
-				'filterHtmlOptions' => array('style' => 'width: 70px;'),
+		'htmlOptions' => array('style' => 'width: 100px;'),
+				'filterHtmlOptions' => array('style' => 'width: 100px;'),
 ),		
 		array(
 			'class'=>'CButtonColumn',

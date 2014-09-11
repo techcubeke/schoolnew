@@ -5,12 +5,12 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dormname')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->dormname), array('view', 'id'=>$data->dormname)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('hostelID')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->hostelID), array('view', 'id'=>$data->hostelID)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dormID')); ?>:</b>
-	<?php echo CHtml::encode($data->dormID); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('hostelname')); ?>:</b>
+	<?php echo CHtml::encode($data->hostelname); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('beds')); ?>:</b>

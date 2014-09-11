@@ -114,6 +114,13 @@
 </div>
 <br />
 <br />
+<div class="row">
+<div class="span3 offset1">
+<button class="btn btn-info" type="submit" onclick="document.location.href='../resultsheet'">Exam Results</button>
+</div>
+</div>
+<br />
+<br />
 <br  />
 <div class="well">
         

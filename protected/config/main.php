@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_errors',0);
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 

@@ -18,14 +18,14 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-    <div class="span3">
-		<?php echo $form->labelEx($model,'hostel name'); ?>
-		<?php echo $form->textField($model,'dormname',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'dormname'); ?>
+    <div class="span3 ">
+		<?php echo $form->labelEx($model,'hostelname'); ?>
+		<?php echo $form->textField($model,'hostelname',array('size'=>60,'maxlength'=>108)); ?>
+		<?php echo $form->error($model,'hostelname'); ?>
 	</div>
 
-	<div class="span3">
-		<?php echo $form->labelEx($model,'no of beds'); ?>
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'beds'); ?>
 		<?php echo $form->textField($model,'beds'); ?>
 		<?php echo $form->error($model,'beds'); ?>
 	</div>

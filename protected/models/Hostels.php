@@ -4,8 +4,8 @@
  * This is the model class for table "hostels".
  *
  * The followings are the available columns in table 'hostels':
- * @property integer $dormID
- * @property string $dormname
+ * @property integer $hostelID
+ * @property string $hostelname
  * @property integer $beds
  */
 class Hostels extends CActiveRecord
@@ -36,12 +36,12 @@ class Hostels extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('dormname, beds', 'required'),
+			array('hostelname, beds', 'required'),
 			array('beds', 'numerical', 'integerOnly'=>true),
-			array('dormname', 'length', 'max'=>20),
+			array('hostelname', 'length', 'max'=>108),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('dormID, dormname, beds', 'safe', 'on'=>'search'),
+			array('hostelID, hostelname, beds', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,8 +62,8 @@ class Hostels extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'dormID' => 'Dorm',
-			'dormname' => 'Dormname',
+			'hostelID' => 'Hostel',
+			'hostelname' => 'Hostelname',
 			'beds' => 'Beds',
 		);
 	}
@@ -79,8 +79,8 @@ class Hostels extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('dormID',$this->dormID);
-		$criteria->compare('dormname',$this->dormname,true);
+		$criteria->compare('hostelID',$this->hostelID);
+		$criteria->compare('hostelname',$this->hostelname,true);
 		$criteria->compare('beds',$this->beds);
 
 		return new CActiveDataProvider($this, array(
