@@ -50,8 +50,8 @@
 	</div>
 
 	<div class="span3 offset2">
-		<?php echo $form->labelEx($model,'accessiondate'); ?>
-		<?php echo $form->textField($model,'accessiondate'); ?>
+		<?php echo $form->labelEx($model,'accession date'); ?>
+		<?php echo $form->textField($model,'accessiondate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'accessiondate'); ?>
 	</div>
 </div>

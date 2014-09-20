@@ -51,7 +51,7 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'foundationdate'); ?>
-		<?php echo $form->textField($model,'foundationdate'); ?>
+		<?php echo $form->textField($model,'foundationdate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'foundationdate'); ?>
 	</div>
 </div>

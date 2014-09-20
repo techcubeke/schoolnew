@@ -95,7 +95,8 @@
 <br  />
 <div class="row">
 	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../curriculum'">Curriculum</button>
+    
+<button  class="btn btn-info" type="submit" onclick="document.location.href='../staff'">Staff</button>
 	</div>
 	<div class="span3 offset2">
 			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../curriculumplan'">Curriculum plan</button>
@@ -129,7 +130,6 @@
 <br />
 <div class=" row">
 <div class="span3 offset1">
-<button  class="btn btn-info" type="submit" onclick="document.location.href='../staff'">Staff</button>
 </div>
 </div>
 <br />

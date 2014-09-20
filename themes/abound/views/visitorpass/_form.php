@@ -64,20 +64,20 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'visit date'); ?>
-		<?php echo $form->textField($model,'visitdate'); ?>
+		<?php echo $form->textField($model,'visitdate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'visitdate'); ?>
 	</div>
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'in time'); ?>
-		<?php echo $form->textField($model,'intime'); ?>
+		<?php echo $form->textField($model,'intime',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'08:14 / 17:00')); ?>
 		<?php echo $form->error($model,'intime'); ?>
 	</div>
 </div>
 	<div class="row">
 		<div class="span3">
 		<?php echo $form->labelEx($model,'out time'); ?>
-		<?php echo $form->textField($model,'outtime'); ?>
+		<?php echo $form->textField($model,'outtime',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'08:14 / 17:00')); ?>
 		<?php echo $form->error($model,'outtime'); ?>
 	</div>
 
@@ -88,7 +88,7 @@
 	</div>
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'date added'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 </div>

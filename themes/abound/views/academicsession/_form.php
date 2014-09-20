@@ -2,9 +2,10 @@
 /* @var $this AcademicsessionController */
 /* @var $model Academicsession */
 /* @var $form CActiveForm */
+
 ?>
 <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
+<?php require_once('calendar/classes/tc_calendar.php'); ?>
 
 <div class="form">
 
@@ -30,14 +31,30 @@
 	</div>
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'session open date'); ?>
-		<?php echo $form->textField($model,'sessionopendate'); ?>
+		
+	  <?php /*?>$myCalendar = new tc_calendar("date5", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setDate(date('d'), date('m'), date('Y'));
+	  $myCalendar->setPath("calender/");
+	  $myCalendar->setYearInterval(2014, 2025);
+	  $myCalendar->dateAllow('2014-05-13', '2020-03-01');
+	  $myCalendar->setDateFormat('j F Y');
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setSpecificDate(array("2011-04-01", "2011-04-04", "2011-12-25"), 0, 'year');
+	  $myCalendar->setSpecificDate(array("2011-04-10", "2011-04-14"), 0, 'month');
+	  $myCalendar->setSpecificDate(array("2011-06-01"), 0, '');
+	  $myCalendar->writeScript();<?php */?>
+
+    	<?php echo $form->textField($model,'sessionopendate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13'));		
+		 ?>
 		<?php echo $form->error($model,'sessionopendate'); ?>
 	</div>
 </div>
+
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'session close date'); ?>
-		<?php echo $form->textField($model,'sessionclosedate'); ?>
+		<?php echo $form->textField($model,'sessionclosedate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13'));?>
 		<?php echo $form->error($model,'sessionclosedate'); ?>
 	</div>
 	<div class="span3 offset1">
@@ -58,3 +75,11 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+<!--<br/>
+
+    <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+  <input class="span2" size="40" type="text" value="12-02-2012">
+  <span class="add-on"><i class="icon-th"></i></span>
+
+</div>
+<br />--!>

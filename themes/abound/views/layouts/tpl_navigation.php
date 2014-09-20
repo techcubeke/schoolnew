@@ -32,7 +32,6 @@
                         		array('label'=>'Dashboard', 'url'=>array('/site/page', 'view'=>'admin')),
 							array('label'=>'Classsroom', 'url'=>array('/classroom')),
 							array('label'=>'Hostels', 'url'=>array('/hostels')),
-							array('label'=>'Curriculum', 'url'=>array('/curriculum')),
                         		array('label'=>'Curriculum Plan', 'url'=>array('/curriculumplan')),
                         		array('label'=>'Assets', 'url'=>array('/asset')),
                         		array('label'=>'Vendors', 'url'=>array('/vendor')),

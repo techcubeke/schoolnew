@@ -26,20 +26,20 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'financial year'); ?>
-		<?php echo $form->textField($model,'financialyear',array('size'=>44,'maxlength'=>44)); ?>
+		<?php echo $form->textField($model,'financialyear',array('size'=>44,'maxlength'=>44,'encode'=>false,'value'=>'','placeholder'=>'2014')); ?>
 		<?php echo $form->error($model,'financialyear'); ?>
 	</div>
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'payment date'); ?>
-		<?php echo $form->textField($model,'paymentdate'); ?>
+		<?php echo $form->textField($model,'paymentdate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'paymentdate'); ?>
 	</div>
 </div>
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'payment mode'); ?>
-		<?php echo $form->textField($model,'paymentmode',array('size'=>12,'maxlength'=>12)); ?>
+		<?php echo $form->textField($model,'paymentmode',array('size'=>12,'maxlength'=>12,'encode'=>false,'value'=>'','placeholder'=>'cheque,cash,mpesa,airtel money,cash deposit')); ?>
 		<?php echo $form->error($model,'paymentmode'); ?>
 	</div>
 
@@ -58,7 +58,7 @@
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'cheque date'); ?>
-		<?php echo $form->textField($model,'chequedate'); ?>
+		<?php echo $form->textField($model,'chequedate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'chequedate'); ?>
 	</div>
 
@@ -83,7 +83,7 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'date added'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 </div>

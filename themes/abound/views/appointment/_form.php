@@ -26,7 +26,7 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'appointment date'); ?>
-		<?php echo $form->textField($model,'appointmentdate'); ?>
+		<?php echo $form->textField($model,'appointmentdate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'appointmentdate'); ?>
 	</div>
 
@@ -51,7 +51,7 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'time'); ?>
-		<?php echo $form->textField($model,'time',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'time',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'08:00 / 17:00')); ?>
 		<?php echo $form->error($model,'time'); ?>
 	</div>
 </div>

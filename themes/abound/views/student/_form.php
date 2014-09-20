@@ -20,7 +20,7 @@
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'academic year'); ?>
-		<?php echo $form->textField($model,'academic_year',array('size'=>44,'maxlength'=>44)); ?>
+		<?php echo $form->textField($model,'academic_year',array('size'=>44,'maxlength'=>44,'encode'=>false,'value'=>'','placeholder'=>'2014')); ?>
 		<?php echo $form->error($model,'academic_year'); ?>
 	</div>
 
@@ -64,7 +64,7 @@
 
 	<div class=" span3 offset1">
 		<?php echo $form->labelEx($model,'date of birth'); ?>
-		<?php echo $form->textField($model,'dateofbirth'); ?>
+		<?php echo $form->textField($model,'dateofbirth',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateofbirth'); ?>
 	</div>
 
@@ -108,14 +108,14 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'admin date'); ?>
-		<?php echo $form->textField($model,'admindate'); ?>
+		<?php echo $form->textField($model,'admindate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'admindate'); ?>
 	</div>
 </div>
 	<div class="row">
 		<div class="span3">
 		<?php echo $form->labelEx($model,'gender'); ?>
-		<?php echo $form->textField($model,'gender',array('size'=>33,'maxlength'=>33)); ?>
+		<?php echo $form->textField($model,'gender',array('size'=>33,'maxlength'=>33,'encode'=>false,'value'=>'','placeholder'=>'male / female')); ?>
 		<?php echo $form->error($model,'gender'); ?>
 	</div>
 

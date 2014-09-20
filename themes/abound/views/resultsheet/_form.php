@@ -26,7 +26,7 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'examtype'); ?>
-		<?php echo $form->textField($model,'examtype',array('size'=>7,'maxlength'=>7)); ?>
+		<?php echo $form->textField($model,'examtype',array('size'=>7,'maxlength'=>7,'encode'=>false,'value'=>'','placeholder'=>'C.A.T 1,C.A.T 2,ENDTERM')) ?>
 		<?php echo $form->error($model,'examtype'); ?>
 	</div>
 </div>
