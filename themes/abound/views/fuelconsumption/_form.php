@@ -39,7 +39,7 @@
 	<div class="row">
 		<div class="span3">
 		<?php echo $form->labelEx($model,'consumed date'); ?>
-		<?php echo $form->textField($model,'consumeddate'); ?>
+		<?php echo $form->textField($model,'consumeddate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'consumeddate'); ?>
 	</div>
 </div>

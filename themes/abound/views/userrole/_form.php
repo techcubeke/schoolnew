@@ -32,7 +32,7 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'date added'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 </div>

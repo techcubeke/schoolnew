@@ -32,7 +32,7 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'paid?'); ?>
-		<?php echo $form->textField($model,'ispaid',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo $form->textField($model,'ispaid',array('size'=>3,'maxlength'=>3,'encode'=>false,'value'=>'','placeholder'=>'yes / no')); ?>
 		<?php echo $form->error($model,'ispaid'); ?>
 	</div>
 </div>

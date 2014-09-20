@@ -53,7 +53,7 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'purchase date'); ?>
-		<?php echo $form->textField($model,'purchasedate'); ?>
+		<?php echo $form->textField($model,'purchasedate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'purchasedate'); ?>
 	</div>
 
@@ -66,13 +66,13 @@
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'in stock?'); ?>
-		<?php echo $form->textField($model,'instock',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo $form->textField($model,'instock',array('size'=>3,'maxlength'=>3,'encode'=>false,'value'=>'','placeholder'=>'yes / no')); ?>
 		<?php echo $form->error($model,'instock'); ?>
 	</div>
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'is reference'); ?>
-		<?php echo $form->textField($model,'isreference',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo $form->textField($model,'isreference',array('size'=>3,'maxlength'=>3,'encode'=>false,'value'=>'','placeholder'=>'yes / no')); ?>
 		<?php echo $form->error($model,'isreference'); ?>
 	</div>
 
@@ -85,13 +85,13 @@
 	<div class="row">
     	<div class="span3">
 		<?php echo $form->labelEx($model,'date added'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'date modified'); ?>
-		<?php echo $form->textField($model,'datemodified'); ?>
+		<?php echo $form->textField($model,'datemodified',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'datemodified'); ?>
 	</div>
 </div>

@@ -45,13 +45,13 @@
 
 	<div class="span3 offset1">		
 		<?php echo $form->labelEx($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 
 	<div class="span3 offset2">
     	<?php echo $form->labelEx($model,'datemodified'); ?>
-		<?php echo $form->textField($model,'datemodified'); ?>
+		<?php echo $form->textField($model,'datemodified',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'datemodified'); ?>
 </div>
     </div>

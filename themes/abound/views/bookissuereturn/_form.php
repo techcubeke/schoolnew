@@ -32,20 +32,20 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'date of issue'); ?>
-		<?php echo $form->textField($model,'dateissue'); ?>
+		<?php echo $form->textField($model,'dateissue',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateissue'); ?>
 	</div>
 </div>
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'date returned'); ?>
-		<?php echo $form->textField($model,'datereturn'); ?>
+		<?php echo $form->textField($model,'datereturn',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'datereturn'); ?>
 	</div>
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'due date'); ?>
-		<?php echo $form->textField($model,'duedate'); ?>
+		<?php echo $form->textField($model,'duedate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'duedate'); ?>
 	</div>
 
@@ -58,13 +58,13 @@
 	<div class="row">
     	<div class="span3">
 		<?php echo $form->labelEx($model,'date added'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'date returned'); ?>
-		<?php echo $form->textField($model,'datemodified'); ?>
+		<?php echo $form->textField($model,'datemodified',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'datemodified'); ?>
 	</div>
     </div>
@@ -82,7 +82,7 @@
 
 	<div class="span2 offset1">
 		<?php echo $form->labelEx($model,'is fine paid'); ?>
-		<?php echo $form->textField($model,'isfinepaid',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo $form->textField($model,'isfinepaid',array('size'=>3,'maxlength'=>3,'encode'=>false,'value'=>'','placeholder'=>'yes / no')); ?>
 		<?php echo $form->error($model,'isfinepaid'); ?>
 	</div>
 </div>

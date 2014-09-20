@@ -32,7 +32,7 @@
 
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'invoicedate'); ?>
-		<?php echo $form->textField($model,'invoicedate'); ?>
+		<?php echo $form->textField($model,'invoicedate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'invoicedate'); ?>
 	</div>
 </div>
@@ -58,7 +58,7 @@
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'duedate'); ?>
-		<?php echo $form->textField($model,'duedate'); ?>
+		<?php echo $form->textField($model,'duedate',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'duedate'); ?>
 	</div>
 
@@ -77,7 +77,7 @@
 	<div class="row">
 		<div class="span3">
 		<?php echo $form->labelEx($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
+		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
 </div>

@@ -39,29 +39,30 @@
 	<div class="row">
     <div class="span3">
 		<?php echo $form->labelEx($model,'arrival mrng'); ?>
-		<?php echo $form->textField($model,'arrivalmrng'); ?>
+		<?php echo $form->textField($model,'arrivalmrng',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'08:00')); ?>
 		<?php echo $form->error($model,'arrivalmrng'); ?>
 	</div>
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'depature mrng'); ?>
-		<?php echo $form->textField($model,'depaturemrng'); ?>
+		<?php echo $form->textField($model,'depaturemrng',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'09:00')); ?>
 		<?php echo $form->error($model,'depaturemrng'); ?>
 	</div>
 
 	<div class="span3 offset2">
     
 		<?php echo $form->labelEx($model,'depature evng'); ?>
-		<?php echo $form->textField($model,'depatureevng'); ?>
+		<?php echo $form->textField($model,'depatureevng',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'17:00')); ?>
 		<?php echo $form->error($model,'depatureevng'); ?>
 	</div>
-
-	<div class="span3 offset2">
+</div>
+<div class="row">
+	<div class="span3 ">
 		<?php echo $form->labelEx($model,'arrival evng'); ?>
-		<?php echo $form->textField($model,'arrivalevng'); ?>
+		<?php echo $form->textField($model,'arrivalevng',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'18:00')); ?>
 		<?php echo $form->error($model,'arrivalevng'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
 		<button class="btn btn-success" type="submit">Create</button>
 	</div>
