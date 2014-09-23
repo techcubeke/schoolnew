@@ -7,30 +7,29 @@
  * @property integer $resultsheetID
  * @property string $admin_no
  * @property string $examtype
- * @property double $maths
- * @property double $english
- * @property double $kiswahili
- * @property double $biology
- * @property double $physics
- * @property double $chemistry
- * @property double $history
- * @property double $geography
- * @property double $religious_studies
- * @property double $agriculture
- * @property double $computerstudies
- * @property double $businesstudies
- * @property double $art
- * @property double $aviation
- * @property double $french
- * @property double $music
- * @property double $woodwork
- * @property double $metal
- * @property double $points
+ * @property integer $maths
+ * @property integer $english
+ * @property integer $kiswahili
+ * @property integer $biology
+ * @property integer $physics
+ * @property integer $chemistry
+ * @property integer $history
+ * @property integer $geography
+ * @property integer $religious_studies
+ * @property integer $agriculture
+ * @property integer $computerstudies
+ * @property integer $businesstudies
+ * @property integer $art
+ * @property integer $aviation
+ * @property integer $french
+ * @property integer $music
+ * @property integer $woodwork
+ * @property integer $metal
+ * @property integer $points
  * @property integer $totalmks
- * @property double $mean
+ * @property integer $mean
  * @property string $grade
  * @property integer $position
- * @property integer $positionstream
  */
 class Resultsheet extends CActiveRecord
 {
@@ -60,15 +59,14 @@ class Resultsheet extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('admin_no, examtype, maths, english, kiswahili, biology, physics, chemistry, history, geography, religious_studies, agriculture, computerstudies, businesstudies, art, aviation, french, music, woodwork, metal, points, totalmks, mean, grade, position, positionstream', 'required'),
-			array('totalmks, position, positionstream', 'numerical', 'integerOnly'=>true),
-			array('maths, english, kiswahili, biology, physics, chemistry, history, geography, religious_studies, agriculture, computerstudies, businesstudies, art, aviation, french, music, woodwork, metal, points, mean', 'numerical'),
+			array('admin_no, examtype, maths, english, kiswahili, totalmks, grade, position', 'required'),
+			array('maths, english, kiswahili, biology, physics, chemistry, history, geography, religious_studies, agriculture, computerstudies, businesstudies, art, aviation, french, music, woodwork, metal, points, totalmks, mean, position', 'numerical', 'integerOnly'=>true),
 			array('admin_no', 'length', 'max'=>44),
 			array('examtype', 'length', 'max'=>7),
 			array('grade', 'length', 'max'=>3),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('resultsheetID, admin_no, examtype, maths, english, kiswahili, biology, physics, chemistry, history, geography, religious_studies, agriculture, computerstudies, businesstudies, art, aviation, french, music, woodwork, metal, points, totalmks, mean, grade, position, positionstream', 'safe', 'on'=>'search'),
+			array('resultsheetID, admin_no, examtype, maths, english, kiswahili, biology, physics, chemistry, history, geography, religious_studies, agriculture, computerstudies, businesstudies, art, aviation, french, music, woodwork, metal, points, totalmks, mean, grade, position', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -115,7 +113,6 @@ class Resultsheet extends CActiveRecord
 			'mean' => 'Mean',
 			'grade' => 'Grade',
 			'position' => 'Position',
-			'positionstream' => 'Positionstream',
 		);
 	}
 
@@ -156,7 +153,6 @@ class Resultsheet extends CActiveRecord
 		$criteria->compare('mean',$this->mean);
 		$criteria->compare('grade',$this->grade,true);
 		$criteria->compare('position',$this->position);
-		$criteria->compare('positionstream',$this->positionstream);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

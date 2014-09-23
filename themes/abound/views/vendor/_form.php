@@ -38,10 +38,9 @@
 
 	<div class="row">
 <div class="span3">
-		<?php echo $form->labelEx($model,'photoimage'); ?>
-		<?php echo $form->textField($model,'photoimage',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'photoimage'); ?>
-
+		<?php echo $form->labelEx($model,'phoneno'); ?>
+		<?php echo $form->textField($model,'phoneno'); ?>
+		<?php echo $form->error($model,'phoneno'); ?>
 	</div>
 
 	<div class="span3 offset1">
@@ -58,22 +57,17 @@
 </div>
 	<div class="row">
 		<div class="span3">
-		<?php echo $form->labelEx($model,'phoneno'); ?>
-		<?php echo $form->textField($model,'phoneno'); ?>
-		<?php echo $form->error($model,'phoneno'); ?>
-	</div>
-
-	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
-	<div class="span3 offset2">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'dateadded'); ?>
 		<?php echo $form->textField($model,'dateadded',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
+
 </div>
 	<div class="row">
 		<div class="span3">

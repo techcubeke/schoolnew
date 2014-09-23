@@ -63,7 +63,7 @@
 	</div>
 
 	<div class="span3 offset1">
-		<?php echo $form->labelEx($model,'date returned'); ?>
+		<?php echo $form->labelEx($model,'date modified'); ?>
 		<?php echo $form->textField($model,'datemodified',array('size'=>60,'maxlength'=>255,'encode'=>false,'value'=>'','placeholder'=>'2014/07/13')); ?>
 		<?php echo $form->error($model,'datemodified'); ?>
 	</div>

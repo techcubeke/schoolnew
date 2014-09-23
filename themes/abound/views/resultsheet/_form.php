@@ -26,19 +26,18 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'examtype'); ?>
-		<?php echo $form->textField($model,'examtype',array('size'=>7,'maxlength'=>7,'encode'=>false,'value'=>'','placeholder'=>'C.A.T 1,C.A.T 2,ENDTERM')) ?>
+		<?php echo $form->textField($model,'examtype',array('size'=>7,'maxlength'=>7,'encode'=>false,'value'=>'','placeholder'=>'C.A.T 1,C.A.T 2,ENDTERM')); ?>
 		<?php echo $form->error($model,'examtype'); ?>
 	</div>
 </div>
-<p style="font-style:oblique">Enter Subjects marks</p>
-	<div class="row">
-		<div class="span3">
+<p>Compulsory Subjects</p>
+<div class="row">
+	<div class="span3">
 		<?php echo $form->labelEx($model,'maths'); ?>
 		<?php echo $form->textField($model,'maths'); ?>
 		<?php echo $form->error($model,'maths'); ?>
 	</div>
-
-	<div class="span3 offset1">
+		<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'english'); ?>
 		<?php echo $form->textField($model,'english'); ?>
 		<?php echo $form->error($model,'english'); ?>
@@ -52,12 +51,11 @@
 </div>
 <p>Sciences</p>
 	<div class="row">
-		<div class="span3">
+	<div class="span3">
 		<?php echo $form->labelEx($model,'biology'); ?>
 		<?php echo $form->textField($model,'biology'); ?>
 		<?php echo $form->error($model,'biology'); ?>
 	</div>
-
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'physics'); ?>
 		<?php echo $form->textField($model,'physics'); ?>
@@ -72,7 +70,7 @@
 </div>
 <p>Humanities</p>
 	<div class="row">
-		<div class="span3">
+    <div class="span3">
 		<?php echo $form->labelEx($model,'history'); ?>
 		<?php echo $form->textField($model,'history'); ?>
 		<?php echo $form->error($model,'history'); ?>
@@ -90,22 +88,22 @@
 		<?php echo $form->error($model,'religious_studies'); ?>
 	</div>
 </div>
-<p>Technical and Extra Studies</p>
+<p style="font:'Comic Sans MS'">Technical subjects</p>
 	<div class="row">
-    <div class="span3">
+		<div class="span3">
 		<?php echo $form->labelEx($model,'agriculture'); ?>
 		<?php echo $form->textField($model,'agriculture'); ?>
 		<?php echo $form->error($model,'agriculture'); ?>
 	</div>
 
 	<div class="span3 offset1">
-		<?php echo $form->labelEx($model,'computerstudies'); ?>
+		<?php echo $form->labelEx($model,'computer studies'); ?>
 		<?php echo $form->textField($model,'computerstudies'); ?>
 		<?php echo $form->error($model,'computerstudies'); ?>
 	</div>
 
 	<div class="span3 offset2">
-		<?php echo $form->labelEx($model,'businesstudies'); ?>
+		<?php echo $form->labelEx($model,'business studies'); ?>
 		<?php echo $form->textField($model,'businesstudies'); ?>
 		<?php echo $form->error($model,'businesstudies'); ?>
 	</div>
@@ -129,8 +127,8 @@
 		<?php echo $form->error($model,'french'); ?>
 	</div>
 </div>
-<div class="row">
-	<div class="span3">
+	<div class="row">
+		<div class="span3">
 		<?php echo $form->labelEx($model,'music'); ?>
 		<?php echo $form->textField($model,'music'); ?>
 		<?php echo $form->error($model,'music'); ?>
@@ -148,9 +146,10 @@
 		<?php echo $form->error($model,'metal'); ?>
 	</div>
 </div>
-<span>TOTALS</span>
+
+<span class="text-info" style="font-size:18px">Totals</span><br />
 	<div class="row">
-		<div class="span3">
+    <div class="span3">
 		<?php echo $form->labelEx($model,'points'); ?>
 		<?php echo $form->textField($model,'points'); ?>
 		<?php echo $form->error($model,'points'); ?>
@@ -169,7 +168,7 @@
 	</div>
 </div>
 	<div class="row">
-		<div class="span3 ">
+		<div class="span3">
 		<?php echo $form->labelEx($model,'grade'); ?>
 		<?php echo $form->textField($model,'grade',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'grade'); ?>
@@ -180,15 +179,9 @@
 		<?php echo $form->textField($model,'position'); ?>
 		<?php echo $form->error($model,'position'); ?>
 	</div>
-
-	<div class="span3 offset2">
-		<?php echo $form->labelEx($model,'position stream'); ?>
-		<?php echo $form->textField($model,'positionstream'); ?>
-		<?php echo $form->error($model,'positionstream'); ?>
-	</div>
 </div>
 	<div class="row buttons">
-		<button class="btn btn-success" type="submit">Create</button>
+		<button class="btn btn-success" type="submit">Create new record</button>
 	</div>
 
 <?php $this->endWidget(); ?>

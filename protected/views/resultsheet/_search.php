@@ -141,11 +141,6 @@
 		<?php echo $form->textField($model,'position'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'positionstream'); ?>
-		<?php echo $form->textField($model,'positionstream'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

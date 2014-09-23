@@ -47,6 +47,5 @@ $this->menu=array(
 		'mean',
 		'grade',
 		'position',
-		'positionstream',
 	),
 )); ?>

@@ -165,12 +165,6 @@
 		<?php echo $form->error($model,'position'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'positionstream'); ?>
-		<?php echo $form->textField($model,'positionstream'); ?>
-		<?php echo $form->error($model,'positionstream'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

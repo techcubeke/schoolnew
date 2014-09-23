@@ -1473,3 +1473,187 @@ Stack trace:
 REQUEST_URI=/@school/userrole
 HTTP_REFERER=http://localhost:8080/@school/financialyear/create
 ---
+2014/09/23 15:28:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'maths' at row 1. The SQL statement executed was: INSERT INTO `resultsheet` (`admin_no`, `examtype`, `maths`, `english`, `kiswahili`, `biology`, `physics`, `chemistry`, `history`, `geography`, `religious_studies`, `agriculture`, `computerstudies`, `businesstudies`, `art`, `aviation`, `french`, `music`, `woodwork`, `metal`, `points`, `totalmks`, `mean`, `grade`, `position`, `positionstream`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25).
+in C:\wamp\www\@school\protected\controllers\ResultsheetController.php (73)
+in C:\wamp\www\@school\index.php (13)
+2014/09/23 15:28:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'maths' at row 1. The SQL statement executed was: INSERT INTO `resultsheet` (`admin_no`, `examtype`, `maths`, `english`, `kiswahili`, `biology`, `physics`, `chemistry`, `history`, `geography`, `religious_studies`, `agriculture`, `computerstudies`, `businesstudies`, `art`, `aviation`, `french`, `music`, `woodwork`, `metal`, `points`, `totalmks`, `mean`, `grade`, `position`, `positionstream`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\@school\protected\controllers\ResultsheetController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): ResultsheetController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resultsheet/cre...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\@school\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/@school/resultsheet/create
+HTTP_REFERER=http://localhost:8080/@school/resultsheet/create
+---
+2014/09/23 15:32:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'maths' at row 1. The SQL statement executed was: INSERT INTO `resultsheet` (`admin_no`, `examtype`, `maths`, `english`, `kiswahili`, `biology`, `physics`, `chemistry`, `history`, `geography`, `religious_studies`, `agriculture`, `computerstudies`, `businesstudies`, `art`, `aviation`, `french`, `music`, `woodwork`, `metal`, `points`, `totalmks`, `mean`, `grade`, `position`, `positionstream`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25).
+in C:\wamp\www\@school\protected\controllers\ResultsheetController.php (73)
+in C:\wamp\www\@school\index.php (13)
+2014/09/23 15:32:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'maths' at row 1. The SQL statement executed was: INSERT INTO `resultsheet` (`admin_no`, `examtype`, `maths`, `english`, `kiswahili`, `biology`, `physics`, `chemistry`, `history`, `geography`, `religious_studies`, `agriculture`, `computerstudies`, `businesstudies`, `art`, `aviation`, `french`, `music`, `woodwork`, `metal`, `points`, `totalmks`, `mean`, `grade`, `position`, `positionstream`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\@school\protected\controllers\ResultsheetController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): ResultsheetController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resultsheet/cre...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\@school\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/@school/resultsheet/create
+HTTP_REFERER=http://localhost:8080/@school/resultsheet/create
+---
+2014/09/23 16:37:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'isfinepaid' at row 1. The SQL statement executed was: INSERT INTO `bookissuereturn` (`bookID`, `personID`, `dateissue`, `datereturn`, `duedate`, `issuedby`, `dateadded`, `datemodified`, `fine`, `isfinepaid`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9).
+in C:\wamp\www\@school\protected\controllers\BookissuereturnController.php (73)
+in C:\wamp\www\@school\index.php (13)
+2014/09/23 16:37:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'isfinepaid' at row 1. The SQL statement executed was: INSERT INTO `bookissuereturn` (`bookID`, `personID`, `dateissue`, `datereturn`, `duedate`, `issuedby`, `dateadded`, `datemodified`, `fine`, `isfinepaid`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\@school\protected\controllers\BookissuereturnController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): BookissuereturnController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookissuereturn...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\@school\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/@school/bookissuereturn/create
+HTTP_REFERER=http://localhost:8080/@school/bookissuereturn/create
+---
+2014/09/23 17:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\@school\protected\controllers\ResultsheetController.php:157
+Stack trace:
+#0 C:\wamp\www\@school\protected\controllers\ResultsheetController.php(55): ResultsheetController->loadModel('7432')
+#1 [internal function]: ResultsheetController->actionView('7432')
+#2 C:\wamp\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResultsheetController), Array)
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResultsheetController), Object(ReflectionMethod), Array)
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resultsheet/vie...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\@school\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/@school/resultsheet/7432
+HTTP_REFERER=http://localhost:8080/@school/resultsheet/index
+---
+2014/09/23 17:25:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resultsheet/vie...')
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\@school\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/@school/resultsheet/view?admin_no=7432
+HTTP_REFERER=http://localhost:8080/@school/resultsheet/index
+---
+2014/09/23 17:33:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resultsheet/vie...')
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\@school\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/@school/resultsheet/view?admin_no=7432
+HTTP_REFERER=http://localhost:8080/@school/resultsheet/index
+---
+2014/09/23 19:19:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'releasedate' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmen`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20).
+in C:\wamp\www\@school\protected\controllers\StaffController.php (73)
+in C:\wamp\www\@school\index.php (13)
+2014/09/23 19:19:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'releasedate' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmen`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\@school\protected\controllers\StaffController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\@school\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/@school/staff/create
+HTTP_REFERER=http://localhost:8080/@school/staff/create
+---
+2014/09/23 19:56:26 [error] [php] Undefined variable: table (C:\wamp\www\@school\themes\abound\views\academicsession\_form.php:78)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(869): AcademicsessionController->renderFile()
+#1 C:\wamp\www\@school\themes\abound\views\academicsession\create.php(18): AcademicsessionController->renderPartial()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(95): AcademicsessionController->renderInternal()
+#4 C:\wamp\Yii\framework\web\CController.php(869): AcademicsessionController->renderFile()
+#5 C:\wamp\Yii\framework\web\CController.php(782): AcademicsessionController->renderPartial()
+#6 C:\wamp\www\@school\protected\controllers\AcademicsessionController.php(79): AcademicsessionController->render()
+#7 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): AcademicsessionController->actionCreate()
+#8 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): AcademicsessionController->runAction()
+#10 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): AcademicsessionController->filterAccessControl()
+#13 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\Yii\framework\web\CController.php(265): AcademicsessionController->runActionWithFilters()
+#16 C:\wamp\Yii\framework\web\CWebApplication.php(282): AcademicsessionController->run()
+#17 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\wamp\www\@school\index.php(13): CWebApplication->run()
+REQUEST_URI=/@school/academicsession/create
+in C:\wamp\www\@school\themes\abound\views\academicsession\_form.php (78)
+in C:\wamp\www\@school\themes\abound\views\academicsession\create.php (18)
+in C:\wamp\www\@school\protected\controllers\AcademicsessionController.php (79)

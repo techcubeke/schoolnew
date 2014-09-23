@@ -110,10 +110,6 @@
 	<?php echo CHtml::encode($data->position); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('positionstream')); ?>:</b>
-	<?php echo CHtml::encode($data->positionstream); ?>
-	<br />
-
 	*/ ?>
 
 </div>

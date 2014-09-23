@@ -53,6 +53,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 				'htmlOptions' => array('class' => 'pagination pagination-lg'),
 		),
 	'columns'=>array(
+		'resultsheetID',
 		'admin_no',
 		'examtype',
 		'maths',
@@ -78,8 +79,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'mean',
 		'grade',
 		'position',
-		'positionstream',
-		
+	
 		array(
 			'class'=>'CButtonColumn',
 		),
