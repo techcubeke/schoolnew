@@ -1657,3 +1657,12 @@ REQUEST_URI=/@school/academicsession/create
 in C:\wamp\www\@school\themes\abound\views\academicsession\_form.php (78)
 in C:\wamp\www\@school\themes\abound\views\academicsession\create.php (18)
 in C:\wamp\www\@school\protected\controllers\AcademicsessionController.php (79)
+2014/09/25 09:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\@school\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/@school/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/@school/visitorpass/update/2
+---
