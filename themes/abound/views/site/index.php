@@ -201,7 +201,7 @@ $gridDataProvider = new CArrayDataProvider(array(
 	<div class="span3">
 		<div class="summary">
 			<ul>
-				<li><span class="summary-icon" onclick="document.location.href = '../feepayment'">
+				<li><span class="summary-icon" onclick="document.location.href = '../site/page?view=feemanage'">
                  <img src="<?php echo $baseUrl ;?>/img/credit.png " width="36"
                         height="36" alt="Monthly Income">
 				</span> <span class="summary-number">$Fee</span> <span
