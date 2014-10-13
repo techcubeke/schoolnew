@@ -128,6 +128,17 @@
 <br />
 <br />
 <br />
+<div class="row">
+	<div class="span3 offset1">
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../salary'">Salary Portal</button>
+	</div>
+    <div class="span3 offset2">
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../expenditure'">School expenditure</button>
+	</div>
+    </div>
+    <br />
+<br />
+<br />
 <div class=" row">
 <div class="span3 offset1">
 </div>

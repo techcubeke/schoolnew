@@ -21,7 +21,7 @@
 			'items'=>array(
 				array('label'=>'<i class="icon icon-home"></i>  Dashboard <span class="label label-info pull-right">BETA</span>', 'url'=>array('/site/index'),'itemOptions'=>array('class'=>'')),
 				array('label'=>'<i class="icon icon-search"></i> About this Application<span class="label label-important pull-right">NEW</span>', 'url'=>'http://www.techcube.co.ke/schoolapp'),
-				array('label'=>'<i class="icon icon-envelope"></i>Transport Management Portal <span class="badge badge-success pull-right"></span>', 'url'=>'#'),
+				array('label'=>'<i class="icon icon-envelope"></i> Store Portal <span class="badge badge-success pull-right"></span>', 'url'=>'#'),
 				// Include the operations menu
 				array('label'=>'OPERATIONS','items'=>$this->menu),
 			),

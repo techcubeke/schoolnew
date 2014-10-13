@@ -1666,3 +1666,55 @@ Stack trace:
 REQUEST_URI=/@school/css/bootstrap.min.css
 HTTP_REFERER=http://localhost:8080/@school/visitorpass/update/2
 ---
+2014/10/13 23:11:59 [error] [php] Undefined variable: gridDataProvider (C:\wamp\www\@school\themes\abound\views\site\index.php:124)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\@school\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\@school\index.php(13): CWebApplication->run()
+REQUEST_URI=/@school/site/index
+in C:\wamp\www\@school\themes\abound\views\site\index.php (124)
+in C:\wamp\www\@school\protected\controllers\SiteController.php (32)
+in C:\wamp\www\@school\index.php (13)
+2014/10/13 23:15:31 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget() call in its view.' in C:\wamp\Yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\wamp\www\@school\themes\abound\views\site\index.php(144): CBaseController->endWidget()
+#1 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\@sc...')
+#2 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\@sc...', NULL, true)
+#3 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\@sc...', NULL, true)
+#4 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\@school\protected\controllers\SiteController.php(32): CController->render('index')
+#6 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\wamp\www\@school\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/@school/site/index
+HTTP_REFERER=http://localhost:8080/@school/feereceipt/create
+---
+2014/10/13 23:58:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "fee" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('fee')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\@school\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/@school/site/page?view=fee
+HTTP_REFERER=http://localhost:8080/@school/site/index
+---

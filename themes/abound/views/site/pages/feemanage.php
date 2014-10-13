@@ -86,10 +86,10 @@
 
 <div class="row">
 	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feepayment'">Fee Payment</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../expenditure'">School expenditure</button>
 	</div>
 	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feereceipt'">Fee Receipt</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../studentreceipt'">Fee Receipt</button>
 	</div>
 </div>
 <br />

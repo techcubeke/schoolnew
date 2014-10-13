@@ -13,6 +13,8 @@ $gridDataProvider = new CArrayDataProvider(array(
 		array('id'=>5, 'firstName'=>'Stu', 'lastName'=>'Dent', 'language'=>'HTML','usage'=>'<span class="inlinebar">1,3,4,5,3,5</span>'),
 ));
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="row-fluid">
 	<div class="span3 ">
@@ -66,18 +68,135 @@ $gridDataProvider = new CArrayDataProvider(array(
 
 
 	<div class="span9">
-		<?php
-		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'<span class="icon-picture"></span>Operations Chart',
-			'titleCssClass'=>''
-		));
-		?>
-
-		<div class="auto-update-chart"
-			style="height: 250px; width: 100%; margin-top: 15px; margin-bottom: 15px;"></div>
-
-		<?php $this->endWidget(); ?>
-
+	<table class="table table-bordered">
+    <caption class="text-info" style="font-size:18px" style="font-style:oblique">Modules and ControlSets</caption>
+    <thead>
+    	<tr>
+        	<th>#</th>
+            <th>Frontdesk</th>
+        	<th>Admin</th>
+            <th>Academic</th>
+            <th>Finance</th>
+            <th>Transport</th>
+            <th>Library</th>
+            <th>Store</th>
+         </tr>
+         </thead>   
+         <tbody>
+         <tr class="active">
+         	<td>1</td>
+         	<td>Visitorpass</td>
+            <td>Classrooms</td>
+            <td>Students</td>
+            <td>School Expenditure</td>
+            <td>Transport Records</td>	
+            <td>Issue Books</td>
+           <td>BookStock</td>
+         </tr> 
+          <tr class="success">
+         	<td>2</td>
+         	<td>Appointment</td>
+            <td>Hostels</td>
+            <td>Parents</td>
+            <td>Student Receipts</td>
+            <td>Stop Details</td>	
+            <td>Book Records</td>
+           <td>Asset Records</td>
+         </tr>
+         	  <tr class="warning">
+         	<td>3</td>
+         	<td>Feedback</td>
+            <td>Curriculum</td>
+            <td>Grading</td>
+            <td>Fee Structure</td>
+            <td>Fuel Consumption</td>	
+            <td></td>
+           <td></td>
+         </tr>
+           	 <tr class="info">
+         	<td>4</td>
+         	<td>Events</td>
+            <td>Assets</td>
+            <td>Subjects</td>
+            <td>Fee Termdates</td>
+            <td>Vehicle details</td>	
+            <td></td>
+           <td></td>
+         </tr>
+             	 <tr class="active">
+         	<td>5</td>
+         	<td></td>
+            <td>Vendors</td>
+            <td>Timetable</td>
+            <td>Banking details</td>
+            <td></td>	
+            <td></td>
+           <td></td>
+         </tr>
+               	 <tr class="warning">
+         	<td>6</td>
+         	<td></td>
+            <td>Events</td>
+            <td>Exam Results</td>
+            <td></td>
+            <td></td>	
+            <td></td>
+           <td></td>
+         </tr>
+               	 <tr class="success">
+         	<td>7</td>
+         	<td></td>
+            <td>School info</td>
+            <td></td>
+            <td></td>
+            <td></td>	
+            <td></td>
+           <td></td>
+         </tr>      	
+          <tr class="info">
+         	<td>8</td>
+         	<td></td>
+            <td>Staff</td>
+            <td></td>
+            <td></td>
+            <td></td>	
+            <td></td>
+           <td></td>
+         </tr>      
+         	 <tr class="active">
+         	<td>9</td>
+         	<td></td>
+            <td>Salary Portal</td>
+            <td></td>
+            <td></td>
+            <td></td>	
+            <td></td>
+           <td></td>
+         </tr>
+          <tr class="success">
+         	<td>9</td>
+         	<td></td>
+            <td>School Expenditure</td>
+            <td></td>
+            <td></td>
+            <td></td>	
+            <td></td>
+           <td></td>
+         </tr>
+         
+          <tr class="success">
+         	<td>10</td>
+         	<td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=front'">Front desk</button></td>
+            <td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=admin'">Admin</button></td>
+            <td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=academic'">Academics</button></td>
+            <td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=feemanage'">Finance</button></td>
+            <td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=transport'">Transport</button></td>	
+            <td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=library'">Library</button></td>
+           <td><button class="btn btn-info" type="submit"  onclick="document.location.href = '../site/page?view=store'">Store</button></td>
+         </tr>
+         	
+         </tbody>   
+</table>
 	</div>
 	<div class="span3">
 		<div class="summary">
@@ -125,54 +244,19 @@ $gridDataProvider = new CArrayDataProvider(array(
 
 	</div>
 	<!--/span-->
-	<div class="span6">
-		<?php $this->widget('zii.widgets.grid.CGridView', array(
-				/*'type'=>'striped bordered condensed',*/
-				'htmlOptions'=>array('class'=>'table table-striped table-bordered table-condensed'),
-				'dataProvider'=>$gridDataProvider,
-				'template'=>"{items}",
-				'columns'=>array(
-				array('name'=>'id', 'header'=>'#'),
-				array('name'=>'firstName', 'header'=>'First name'),
-				array('name'=>'lastName', 'header'=>'Last name'),
-				array('name'=>'language', 'header'=>'Language'),
-				array('name'=>'usage', 'header'=>'Usage', 'type'=>'raw'),
-
-			),
-		)); ?>
-
-	</div>
+	
 	<!--/span-->
 </div>
 <!--/row-->
 
 <div class="row-fluid">
 	<div class="span6">
-		<?php
-		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'<span class="icon-th-large"></span>Income Chart',
-			'titleCssClass'=>''
-		));
-		?>
-
-		<div class="visitors-chart"
-			style="height: 230px; width: 100%; margin-top: 15px; margin-bottom: 15px;"></div>
-
-		<?php $this->endWidget(); ?>
+	
 	</div>
 	<!--/span-->
 	<div class="span6">
-		<?php
-		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'<span class="icon-th-list"></span> Visitors Chart',
-			'titleCssClass'=>''
-		));
-		?>
 
-		<div class="pieStats"
-			style="height: 230px; width: 100%; margin-top: 15px; margin-bottom: 15px;"></div>
 
-		<?php $this->endWidget(); ?>
 	</div>
 	<!--<div class="span2">
     	<input class="knob" data-width="100" data-displayInput=false data-fgColor="#5EB95E" value="35">
