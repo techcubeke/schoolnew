@@ -91,7 +91,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=schoolnew',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		'authManger'=>array(

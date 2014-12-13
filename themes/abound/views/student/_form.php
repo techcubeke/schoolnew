@@ -83,6 +83,8 @@
 
 	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'photo image'); ?>
+        <input id="file" type="jpg" name="file"> 
+        <input id="submit" type="submit" name="submit" value="Upload" />
 		<?php echo $form->textField($model,'photoimage',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'photoimage'); ?>
 	</div>
