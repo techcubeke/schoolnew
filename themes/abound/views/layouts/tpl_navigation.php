@@ -55,7 +55,7 @@
 										'items'=>array(
 												array('label'=>'Dashboard', 'url'=>array('/site/page', 'view'=>'feemanage')),
 												array('label'=>'School Expenditure', 'url'=>array('/expenditure')),
-												array('label'=>'Student Receipts', 'url'=>array('/studentreceipt')),
+												array('label'=>'Student Receipts', 'url'=>array('/feereceipt')),
 												array('label'=>'Fee Structure', 'url'=>array('/feestructure')),
 												array('label'=>'Fee Termdates', 'url'=>array('/feetermdate')),
 												array('label'=>'Banking Details', 'url'=>array('/bankaccounts')),

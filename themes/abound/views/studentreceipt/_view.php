@@ -3,12 +3,13 @@
 /* @var $data Studentreceipt */
 ?>
 
-<div class="view">
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('idstudentreceipt')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->idstudentreceipt), array('view', 'id'=>$data->idstudentreceipt)); ?>
-	<br />
-
+<div class="view" >
+    <table class="table-bordered"title="Student Receipts" > 
+    <tbody>
+    <tr>
+        <td><?php echo CHtml::encode($data->getAttributeLabel('idstudentreceipt')); ?>:</td>
+        <td><?php echo CHtml::link(CHtml::encode($data->idstudentreceipt), array('view', 'id'=>$data->idstudentreceipt)); ?></td>
+    </tr>
 	<b><?php echo CHtml::encode($data->getAttributeLabel('adminno')); ?>:</b>
 	<?php echo CHtml::encode($data->adminno); ?>
 	<br />
@@ -32,7 +33,8 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('firstname')); ?>:</b>
 	<?php echo CHtml::encode($data->firstname); ?>
 	<br />
-
+</tbody>>
+</table>
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('othernames')); ?>:</b>
 	<?php echo CHtml::encode($data->othernames); ?>

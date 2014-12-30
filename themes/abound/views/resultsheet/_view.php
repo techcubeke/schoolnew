@@ -5,75 +5,109 @@
 <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 
-<div class="view">
-<b>
-    	<?php echo CHtml::link(CHtml::encode($data->resultsheetID), array('view', 'id'=>$data->resultsheetID)); ?></b>
-        <br />
-	<b><?php echo CHtml::encode($data->getAttributeLabel('admin_no')); ?>:</b>
-  	<?php echo CHtml::link(CHtml::encode($data->admin_no), array('view', 'admin_no'=>$data->admin_no)); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('examtype')); ?>:</b>
-	<?php echo CHtml::encode($data->examtype); ?>
-	<br />
-	<p>Compulsory</p>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('maths')); ?>:</b>
-	<?php echo CHtml::encode($data->maths); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('english')); ?>:</b>
-	<?php echo CHtml::encode($data->english); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('kiswahili')); ?>:</b>
-	<?php echo CHtml::encode($data->kiswahili); ?>
-	<br />
-	<p>Sciences</p>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('biology')); ?>:</b>
-	<?php echo CHtml::encode($data->biology); ?>
-	<?php echo CHtml::encode($data->getAttributeLabel('physics')); ?>:</b>
-	<?php echo CHtml::encode($data->physics); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('chemistry')); ?>:</b>
-	<?php echo CHtml::encode($data->chemistry); ?>
-	<br />
-	<p>Humanities</p>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('history')); ?>:</b>
-	<?php echo CHtml::encode($data->history); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('geography')); ?>:</b>
-	<?php echo CHtml::encode($data->geography); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('religious_studies')); ?>:</b>
-	<?php echo CHtml::encode($data->religious_studies); ?>
-	<br />
-	<p>Technical</p>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('agriculture')); ?>:</b>
-	<?php echo CHtml::encode($data->agriculture); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('computerstudies')); ?>:</b>
-	<?php echo CHtml::encode($data->computerstudies); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('businesstudies')); ?>:</b>
-	<?php echo CHtml::encode($data->businesstudies); ?>
+<div class="container">
+	<div class="span9">
+		<table class="table table-bordered" title="Result slips">
+			<tr>
+				<td><?php echo CHtml::link(CHtml::encode($data->resultsheetID), array('view', 'id'=>$data->resultsheetID)); ?>
+				</td>
+			</tr>
+			<tr>
 
-	<br />
-	<b><?php echo CHtml::encode($data->getAttributeLabel('aviation')); ?>:</b>
-	<?php echo CHtml::encode($data->aviation); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('french')); ?>:</b>
-	<?php echo CHtml::encode($data->french); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('music')); ?>:</b>
-	<?php echo CHtml::encode($data->music); ?>
-	<br />
-	<b><?php echo CHtml::encode($data->getAttributeLabel('woodwork')); ?>:</b>
-	<?php echo CHtml::encode($data->woodwork); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('metal')); ?>:</b>
-	<?php echo CHtml::encode($data->metal); ?>
-    	<b><?php echo CHtml::encode($data->getAttributeLabel('art')); ?>:</b>
-	<?php echo CHtml::encode($data->art); ?>
-	<br />
-    <span class="text-info" style="font-size:18px">Totals</span>
-    <br />
-    <b><?php echo CHtml::encode($data->getAttributeLabel('points')); ?>:</b>
-	<?php echo CHtml::encode($data->points); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('totalmks')); ?>:</b>
-	<?php echo CHtml::encode($data->totalmks); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('mean')); ?>:</b>
-	<?php echo CHtml::encode($data->mean); ?>
-	<br />
-	<b><?php echo CHtml::encode($data->getAttributeLabel('grade')); ?>:</b>
-	<?php echo CHtml::encode($data->grade); ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('position')); ?>:</b>
-	<?php echo CHtml::encode($data->position); ?>
-	<br />
+			</tr>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('admin_no')); ?>:</td>
+			<td><?php echo CHtml::link(CHtml::encode($data->admin_no), array('view', 'admin_no'=>$data->admin_no)); ?>
+			</td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('examtype')); ?>:</td>
+			<td colspan="3"><?php echo CHtml::encode($data->examtype); ?></td>
 
+			</tr>
+			<tr>
+				<td class="success" colspan="6">Compulsory Exams</td>
+
+			</tr>
+			<tr>
+				<td><?php echo CHtml::encode($data->getAttributeLabel('maths')); ?>:</td>
+				<td><?php echo CHtml::encode($data->maths); ?></td>
+				<td><?php echo CHtml::encode($data->getAttributeLabel('english')); ?>:</td>
+				<td><?php echo CHtml::encode($data->english); ?></td>
+
+				<td><?php echo CHtml::encode($data->getAttributeLabel('kiswahili')); ?>:</td>
+				<td><?php echo CHtml::encode($data->kiswahili); ?>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">Sciences</td>
+			</tr>
+			<tr>
+				<td><?php echo CHtml::encode($data->getAttributeLabel('biology')); ?>:</td>
+				<td><?php echo CHtml::encode($data->biology); ?></td>
+				<td><?php echo CHtml::encode($data->getAttributeLabel('physics')); ?></td>				
+				<td><?php echo CHtml::encode($data->physics); ?></td>
+				<td><?php echo CHtml::encode($data->getAttributeLabel('chemistry')); ?>:</td>
+				<td><?php echo CHtml::encode($data->chemistry); ?>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">Humanities</td>
+			</tr>
+                        <tr>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('history')); ?>:</td>
+			<td><?php echo CHtml::encode($data->history); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('geography')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->geography); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('religious_studies')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->religious_studies); ?>
+			</td>
+                        </tr>
+                        <tr><td colspan="6">Technical</td>
+                </tr>
+			<tr>
+                            <td><?php echo CHtml::encode($data->getAttributeLabel('agriculture')); ?>:</td>
+                            <td><?php echo CHtml::encode($data->agriculture); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('computerstudies')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->computerstudies); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('businesstudies')); ?>:</td>
+			<td><?php echo CHtml::encode($data->businesstudies); ?></td>
+                        </tr>
+                                            <tr>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('aviation')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->aviation); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('french')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->french); ?></td>
+                        <td><?php echo CHtml::encode($data->getAttributeLabel('music')); ?>:</td>
+			<td><?php echo CHtml::encode($data->music); ?></td>
+                                            </tr>
+                                            <tr>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('woodwork')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->woodwork); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('metal')); ?>:</td>
+                        <td><?php echo CHtml::encode($data->metal); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('art')); ?>:</td>
+			<td><?php echo CHtml::encode($data->art); ?>
+			</td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td colspan="6"><span class="text-info" style="font-size: 18px">Totals</span></td>
+                                            </tr>
+			<tr>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('points')); ?>:</td>
+			<td><?php echo CHtml::encode($data->points); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('totalmks')); ?>:</td>
+                                                      <td><?php echo CHtml::encode($data->totalmks); ?></td>
+			<td><?php echo CHtml::encode($data->getAttributeLabel('mean')); ?>:</td>
+                                                       <td><?php echo CHtml::encode($data->mean); ?></td>>
+                                              </tr>
+                                              <tr>
+                                                    <td><?php echo CHtml::encode($data->getAttributeLabel('grade')); ?>:</td>
+                                                    <td><?php echo CHtml::encode($data->grade); ?></td>
+                                                    <td><?php echo CHtml::encode($data->getAttributeLabel('position')); ?>:</td>
+                                                    <td colspan="3"><?php echo CHtml::encode($data->position); ?></td>
+                                              </tr>
+                </table>
+ <button class="btn btn-primary">Download pdf</button>
+            <br />
+
+			</div>
 </div>
